@@ -1,13 +1,13 @@
 import React from 'react'
-import ContentHome from '../../components/home'
+import WhoWeAre from '../../components/whoWeAre'
 import LayoutFull from '../../layout/layoutFull'
 
-const HomePage = () => {
+const WhoWeArePage = () => {
   return (
     <LayoutFull>
-      <ContentHome />
+      <WhoWeAre />
     </LayoutFull>
   )
 }
 
-export default HomePage
+export default WhoWeArePage

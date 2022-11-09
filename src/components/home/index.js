@@ -1,24 +1,18 @@
 import React from 'react'
-import DpAboutRoad from './dp-about-road'
-import DpAdmission from './dp-admission'
-import DpAlumniSaying from './dp-alumni-saying'
-import DpBackground from './dp-background'
-import DpCampus from './dp-campus'
-import DpConcerns from './dp-concerns'
-import DpMustHave from './dp-must-have'
+import ClientsPartners from './ClientsPartners'
+import HomeSlide from './homeSlide'
+import TypicalSuccessful from './TypicalSuccessful'
+import WeDevelop from './WeDevelop'
 
-const Content = () => {
+const ContentHome = () => {
   return (
     <>
-    <DpBackground/>
-    <DpAboutRoad/>
-    <DpMustHave/>
-    <DpCampus/>
-    <DpAdmission/>
-    <DpConcerns/>
-    <DpAlumniSaying/>
+    <HomeSlide/>
+    <TypicalSuccessful/>
+    <WeDevelop/>
+    <ClientsPartners/>
     </>
   )
 }
 
-export default Content
+export default ContentHome

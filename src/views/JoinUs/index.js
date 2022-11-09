@@ -1,13 +1,13 @@
 import React from 'react'
-import ContentHome from '../../components/home'
+import JoinUs from '../../components/JoinUs'
 import LayoutFull from '../../layout/layoutFull'
 
-const HomePage = () => {
+const JoinUsPage = () => {
   return (
     <LayoutFull>
-      <ContentHome />
+      <JoinUs />
     </LayoutFull>
   )
 }
 
-export default HomePage
+export default JoinUsPage

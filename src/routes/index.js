@@ -1,20 +1,22 @@
 import React from 'react';
 import {
-  Routes,
-  Route,
-  BrowserRouter,
+  BrowserRouter, Route, Routes
 } from "react-router-dom";
 import HomePage from '../views/home';
-import OnePlusCampus from '../views/one-plus-campus';
-import TwoPlusCampus from '../views/two-plus-campus';
+import JoinUsPage from '../views/JoinUs';
+import LetTaskPage from '../views/letTask';
+import PorfolioPage from '../views/Porfolio';
+import WhoWeArePage from '../views/whoWeAre';
 
 const RouterApp = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="one-plus-campus" element={<OnePlusCampus />} />
-        <Route path="two-plus-campus" element={<TwoPlusCampus />} />
+        <Route path="/who-we-are" element={<WhoWeArePage />} />
+        <Route path="/portfolio" element={<PorfolioPage />} />
+        <Route path="/join-us" element={<JoinUsPage />} />
+        <Route path="/lets-talk" element={<LetTaskPage />} />
       </Routes>
     </BrowserRouter>
   )

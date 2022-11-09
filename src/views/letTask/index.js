@@ -1,13 +1,13 @@
 import React from 'react'
-import ContentHome from '../../components/home'
+import LetTask from '../../components/letTask'
 import LayoutFull from '../../layout/layoutFull'
 
-const HomePage = () => {
+const LetTaskPage = () => {
   return (
     <LayoutFull>
-      <ContentHome />
+      <LetTask />
     </LayoutFull>
   )
 }
 
-export default HomePage
+export default LetTaskPage

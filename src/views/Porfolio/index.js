@@ -1,13 +1,13 @@
 import React from 'react'
-import ContentHome from '../../components/home'
+import Porfolio from '../../components/Porfolio'
 import LayoutFull from '../../layout/layoutFull'
 
-const HomePage = () => {
+const PorfolioPage = () => {
   return (
     <LayoutFull>
-      <ContentHome />
+      <Porfolio />
     </LayoutFull>
   )
 }
 
-export default HomePage
+export default PorfolioPage
