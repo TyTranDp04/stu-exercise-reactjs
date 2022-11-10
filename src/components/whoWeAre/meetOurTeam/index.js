@@ -51,7 +51,7 @@ const MeetOurTeam = ({ title }) => {
         </ContainerBody>
       </Body>
       <FooterBtn className="text-end p-5">
-        <Link href="http://localhost:3000/">
+        <Link href="/">
         <Btn>Wanna join us</Btn>
         </Link>
       </FooterBtn>
