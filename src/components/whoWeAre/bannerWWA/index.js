@@ -1,11 +1,11 @@
 import React from "react";
-import { Banner, Container } from "./style";
+import { Banner, Container, ImgBanner } from "./style";
 
-const BannerWWA = ({ titleWa }) => {
+const BannerWWA = () => {
   return (
     <Container className="Container-fluid">
-      <Banner>
-        {/* <img src='https://stunited.vn/wp-content/uploads/2019/08/1566375726229.jpeg' alt=''></img> */}
+      <Banner className="">
+        <ImgBanner>        </ImgBanner>
       </Banner>
     </Container>
   );

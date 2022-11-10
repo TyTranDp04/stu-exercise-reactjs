@@ -4,7 +4,21 @@ export const Container = styled.div`
   padding: 0px;
   background-color: #f5f5f5;
 `;
-export const Banner = styled.div``;
+export const Banner = styled.div`
+height:400px;
+margin-bottom:50px;
+
+`;
+export const ImgBanner = styled.div`
+background-position:50% 50%;
+background-size:cover;
+font-weight:300;
+line-height:24px;
+background-image: url(${imgBanner});
+width:100%;
+height:100%;
+`;
+
 export const Body = styled.div``;
 export const HeaderContent = styled.div``;
 export const Title = styled.h2``;
