@@ -4,7 +4,7 @@ import LayoutFull from '../../layout/layoutFull'
 
 const HomePage = () => {
   return (
-    <LayoutFull>
+    <LayoutFull title="ST United &#8211; United to grow up">
       <ContentHome />
     </LayoutFull>
   )
