@@ -6,7 +6,7 @@ import HomePage from '../views/home';
 import JoinUsPage from '../views/JoinUs';
 import LetTaskPage from '../views/letTask';
 import PorfolioPage from '../views/Porfolio';
-import WhoWeArePage from '../views/whoWeAre';
+import WhoWeArePage from '../views/WhoWeAre';
 
 const RouterApp = () => {
   return (
