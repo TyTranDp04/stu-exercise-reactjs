@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imgBanner from "../../../assets/images/whoweare/banner.jpeg";
 export const Container = styled.div`
   padding: 0px;
 `;

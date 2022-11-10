@@ -4,9 +4,9 @@ import LayoutFull from '../../layout/layoutFull'
 
 const WhoWeArePage = () => {
   return (
-    // <LayoutFull title="WHO WE ARE &#8211; ST United">
+    <LayoutFull title="WHO WE ARE &#8211; ST United">
       <WhoWeAre />
-    // </LayoutFull>
+    </LayoutFull>
   )
 }
 
