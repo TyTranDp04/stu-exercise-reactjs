@@ -3,7 +3,7 @@ import HeaderMobile from './HeaderMobile';
 import HeaderSection from './HeaderSection';
 import HeaderContainer from './style';
 
-function Header(props) {
+const Header = () => {
     return (
         <HeaderContainer>
             <HeaderSection/>

@@ -3,7 +3,7 @@ import NavBar from '../Navbar';
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import logo from '../../../assets/images/stlogo.png';
-function HeaderSection() {
+const HeaderSection =() =>{
   const [showNavBar, setShowNavBar] = useState(false)
   return (
     <Container fluid className="header__mobile">
