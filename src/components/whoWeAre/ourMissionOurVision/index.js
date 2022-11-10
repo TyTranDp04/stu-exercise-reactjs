@@ -1,5 +1,5 @@
 import React from "react";
-import { dataContent, dataLi } from "../../../constants/ourteam";
+import { dataContent, dataList } from "../../../constants/ourteam";
 import {
   Body,
   Container,
@@ -29,7 +29,7 @@ const OurMissionOurVision = ({ Ov, Om, content }) => {
           <TextContent>
             <Strong>{Om}</Strong>:
           </TextContent>
-          {dataLi.map((text) => (
+          {dataList.map((text) => (
             <Ul key={text.id}>
               <Li>{text.textLi}</Li>
             </Ul>

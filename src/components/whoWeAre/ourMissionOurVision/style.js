@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imgBanner from "../../../assets/images/whoweare/banner.jpeg";
 export const Container = styled.div`
   padding: 0px;
 `;
@@ -76,6 +75,6 @@ export const Avatar = styled.img`
   height: 150px;
 `;
 
-export const Ul = styled.ul``
+export const Ul = styled.ul``;
 
-export const Li = styled.li``
+export const Li = styled.li``;

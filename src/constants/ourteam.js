@@ -153,7 +153,7 @@ export const dataTeam = [
   },
 ];
 
-export const dataText = [
+export const dataTextLeft = [
   {
     id: 1,
     title: "Passion to Excel",
@@ -171,7 +171,7 @@ export const dataText = [
   },
 ];
 
-export const dataText2 = [
+export const dataTextRight = [
   {
     id: 4,
     title: "Customer satisfaction",
@@ -189,7 +189,7 @@ export const dataText2 = [
   },
 ];
 
-export const dataLi = [
+export const dataList = [
   {"id":1,
   "textLi":"To empower our business partners to gain competitive advantage by providing innovative solutions."},
   {"id":2,

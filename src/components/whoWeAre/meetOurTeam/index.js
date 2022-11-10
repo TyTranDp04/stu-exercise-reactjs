@@ -1,21 +1,35 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { dataTeam } from '../../../constants/ourteam';
-import { getListDataTeam } from '../../../store/actions/WhoWeAre';
-import { Avatar, Body, Card, Container, ContainerBody, ContentCard, FooterCard, H1, HeaderCard, Link, Row, TextContent } from './style'
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getListDataTeam } from "../../../store/actions/WhoWeAre";
+import {
+  Avatar,
+  Body,
+  Btn,
+  Card,
+  Container,
+  ContainerBody,
+  ContentCard,
+  FooterBtn,
+  FooterCard,
+  H1,
+  HeaderCard,
+  Link,
+  Row,
+  TextContent,
+} from "./style";
 
-const MeetOurTeam = ({title}) => {
-    const dataTeam = useSelector((state) => state.dataTeam.dataTeamState);
-    const dispatch = useDispatch();
-    const data = dataTeam.data;
-    useEffect(() => {
-      dispatch(getListDataTeam());
-    }, [dispatch]);
+const MeetOurTeam = ({ title }) => {
+  const dataTeam = useSelector((state) => state.dataTeam.dataTeamState);
+  const dispatch = useDispatch();
+  const data = dataTeam.data;
+  useEffect(() => {
+    dispatch(getListDataTeam());
+  }, [dispatch]);
   console.log(data);
   return (
-    <Container className='container-fluid'>
-      <Body className='container'>
-      <ContainerBody className="container">
+    <Container className="container-fluid">
+      <Body className="container">
+        <ContainerBody className="container">
           <H1 className="mb-5">{title}</H1>
           <Row className="row">
             {data?.map((item) => (
@@ -36,8 +50,13 @@ const MeetOurTeam = ({title}) => {
           </Row>
         </ContainerBody>
       </Body>
+      <FooterBtn className="text-end p-5">
+        <Link href="http://localhost:3000/">
+        <Btn>Wanna join us</Btn>
+        </Link>
+      </FooterBtn>
     </Container>
-  )
-}
+  );
+};
 
-export default MeetOurTeam
+export default MeetOurTeam;

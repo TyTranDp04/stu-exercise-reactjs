@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import imgBanner from "../../../assets/images/whoweare/banner.jpeg";
 export const Container = styled.div`
   padding: 0px;
-  margin:0px;
+  margin: 0px;
 `;
 export const Banner = styled.div``;
 export const Body = styled.div``;
@@ -65,7 +64,7 @@ export const Card = styled.div`
     box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
   }
 `;
-export const HeaderCard = styled.div``
+export const HeaderCard = styled.div``;
 export const FooterCard = styled.div`
   padding: 20px 0px;
 `;
@@ -79,5 +78,23 @@ export const Avatar = styled.img`
 `;
 
 export const H1 = styled.h1`
-font-size:27px;
-`
+  font-size: 27px;
+`;
+
+export const FooterBtn = styled.div`
+
+`;
+export const Btn = styled.button`
+background-color:#f5b14b;
+border-color:#f5b14b;
+border-radius:5px;
+border-style:solid;
+border-width:1px;
+color:#f7f7f7;
+display:inline-block;
+font-family:Roboto;
+font-size:14px;
+font-weight:300;
+padding:14px 20px;
+text-align:center;
+`;

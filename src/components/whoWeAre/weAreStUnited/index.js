@@ -1,15 +1,29 @@
-import React from 'react'
-import { dataText, dataText2 } from '../../../constants/ourteam'
-import { Body, BodyWA, ColumnInner, Container, ContentCard, H4, HeaderContent, Row, TextContent, Title } from './style'
+import React from "react";
+import {
+  dataTextLeft,
+  dataTextRight,
+} from "../../../constants/ourteam";
+import {
+  Body,
+  BodyWA,
+  ColumnInner,
+  Container,
+  ContentCard,
+  H4,
+  HeaderContent,
+  Row,
+  TextContent,
+  Title,
+} from "./style";
 
-const WeAreStUnited = ({titleStories,titleWa1}) => {
+const WeAreStUnited = ({ titleStories, titleWa1 }) => {
   return (
-    <Container className='container-fluid'>
-      <Body className='container'>
-      <Row>
+    <Container className="container-fluid">
+      <Body className="container">
+        <Row>
           <Title>{titleWa1}</Title>
           <BodyWA className="row text-start mt-5">
-            {dataText.map((text) => (
+            {dataTextLeft.map((text) => (
               <ColumnInner
                 className="col-lg-6 col-md-6 col-sm-12"
                 key={text.id}
@@ -22,7 +36,7 @@ const WeAreStUnited = ({titleStories,titleWa1}) => {
                 </ContentCard>
               </ColumnInner>
             ))}
-            {dataText2.map((text) => (
+            {dataTextRight.map((text) => (
               <ColumnInner
                 className="col-lg-6 col-md-6 col-sm-12"
                 key={text.id}
@@ -42,7 +56,7 @@ const WeAreStUnited = ({titleStories,titleWa1}) => {
         </Row>
       </Body>
     </Container>
-  )
-}
+  );
+};
 
-export default WeAreStUnited
+export default WeAreStUnited;
