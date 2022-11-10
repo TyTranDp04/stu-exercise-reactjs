@@ -5,12 +5,12 @@ import logo from '../../assets/images/stlogo.png'
 import Header from '../../../src/components/header/index'
 import Footer from '../../../src/components/footer/index'
 
-const LayoutFull = ({ children }) => {
+const LayoutFull = ({ children, title = "" }) => {
 
   return (<>
     <HelmetProvider>
       <Helmet>
-        <title>WHO WE ARE – ST United</title>
+        <title>{title}</title>
         <link rel="icon" href={logo} />
       </Helmet>
     </HelmetProvider>
