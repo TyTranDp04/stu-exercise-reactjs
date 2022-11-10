@@ -82,7 +82,7 @@ export const H1 = styled.h1`
 `;
 
 export const FooterBtn = styled.div`
-
+margin-top:-20px;
 `;
 export const Btn = styled.button`
 background-color:#f5b14b;
