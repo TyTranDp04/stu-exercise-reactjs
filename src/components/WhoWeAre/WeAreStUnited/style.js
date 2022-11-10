@@ -22,7 +22,7 @@ export const Strong = styled.strong`
 export const BodyWA = styled.div`
   @media (max-width: 897px) {
     padding: 0px;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 `;
 export const ColumnInner = styled.div`
@@ -74,4 +74,7 @@ export const Avatar = styled.img`
   width: 150px;
   height: 150px;
 `;
-export const H4 = styled.h4``;
+export const H4 = styled.h4`
+font-weight:500;
+line-height:20px;
+`;
