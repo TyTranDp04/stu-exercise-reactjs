@@ -4,7 +4,7 @@ import LayoutFull from '../../layout/layoutFull'
 
 const LetTaskPage = () => {
   return (
-    <LayoutFull>
+    <LayoutFull title="Let&#8217;s talk &#8211; ST United">
       <LetTask />
     </LayoutFull>
   )
