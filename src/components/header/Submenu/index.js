@@ -1,8 +1,7 @@
 import React from 'react';
-function Submenu(props) {
+const  Submenu = (props) => {
   const option = props.value
   const show = props.value.status
-  console.log(show)
   return (
    
       <ul className={show?"sub__menu-option sub__menu-option--active":"sub__menu-option"}>  
