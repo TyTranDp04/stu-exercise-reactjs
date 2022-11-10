@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 import HomePage from '../views/home';
 import JoinUsPage from '../views/JoinUs';
-import LetTaskPage from '../views/letTask';
+import LetTaskPage from '../views/LetTalk';
 import PorfolioPage from '../views/Porfolio';
 import WhoWeArePage from '../views/WhoWeAre';
 
