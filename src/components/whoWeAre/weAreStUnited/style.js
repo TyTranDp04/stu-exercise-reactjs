@@ -75,3 +75,4 @@ export const Avatar = styled.img`
   width: 150px;
   height: 150px;
 `;
+export const H4 = styled.h4``;

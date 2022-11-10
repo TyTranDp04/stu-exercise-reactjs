@@ -75,3 +75,7 @@ export const Avatar = styled.img`
   width: 150px;
   height: 150px;
 `;
+
+export const Ul = styled.ul``
+
+export const Li = styled.li``

@@ -65,6 +65,7 @@ export const Card = styled.div`
     box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
   }
 `;
+export const HeaderCard = styled.div``
 export const FooterCard = styled.div`
   padding: 20px 0px;
 `;
@@ -76,3 +77,7 @@ export const Avatar = styled.img`
   width: 150px;
   height: 150px;
 `;
+
+export const H1 = styled.h1`
+font-size:27px;
+`

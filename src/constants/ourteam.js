@@ -188,3 +188,19 @@ export const dataText2 = [
     text: "We believe that we are more creative and productive if we’re having fun! The company embraces laughter, humor, and having fun while working toward achieving our objectives.",
   },
 ];
+
+export const dataLi = [
+  {"id":1,
+  "textLi":"To empower our business partners to gain competitive advantage by providing innovative solutions."},
+  {"id":2,
+  "textLi":"To continuously enhance our expertise in cutting-edge technologies and processes."
+  }
+];
+
+export const dataContent = [
+  {"id":1,
+  "text":"Established on the early of 2016 and known as STD Software serves diverse global clients (Japanese, Australian, US) by offering mainstream services: IT outsourcing, software & website development, mobile applications."},
+  {"id":2,
+  "text":"In 2019, STD Software was acquired to become ST Software division in ST United beside other divisions: ST Digital and ST Incubator."
+  }
+  ]
