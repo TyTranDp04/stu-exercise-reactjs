@@ -6,6 +6,7 @@ import HomePage from '../views/home';
 import JoinUsPage from '../views/JoinUs';
 import LetTaskPage from '../views/letTask';
 import PorfolioPage from '../views/Porfolio';
+import StSoftWarePage from '../views/WhatWeDoPage/StSoftwarePage';
 import WhoWeArePage from '../views/whoWeAre';
 
 const RouterApp = () => {
@@ -17,6 +18,7 @@ const RouterApp = () => {
         <Route path="/portfolio" element={<PorfolioPage />} />
         <Route path="/join-us" element={<JoinUsPage />} />
         <Route path="/lets-talk" element={<LetTaskPage />} />
+        <Route path="/st-software" element={<StSoftWarePage />} />
       </Routes>
     </BrowserRouter>
   )

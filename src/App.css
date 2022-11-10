@@ -8,8 +8,13 @@
   font-family: 'Rubik';
 }
 
+@font-face {
+  src: url('assets/fonts/Roboto/Roboto-Regular.ttf');
+  font-family: 'Roboto';
+}
+
 .App {
-  font-family: 'Nunito';
+  font-family: 'Roboto';
   text-align: center;
 }
 
