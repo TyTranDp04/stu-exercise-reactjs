@@ -1,16 +1,16 @@
 import React from 'react'
-import BannerWWA from './bannerWWA'
-import MeetOurTeam from './meetOurTeam'
-import OurMissionOurVision from './ourMissionOurVision'
-import WeAreStUnited from './weAreStUnited'
+import BannerWWA from './BannerWWA'
+import MeetOurTeam from './MeetOurTeam'
+import OurMissionOurVision from './OurMissionOurVision'
+import WeAreStUnited from './WeAreStUnited'
 
 const WhoWeAre = () => {
   const titleWa = "WE ARE ST UNITED";
   return (
     <>
-    <BannerWWA titleWa={titleWa} />
+    <BannerWWA/>
     <OurMissionOurVision/>
-    <WeAreStUnited/>
+    <WeAreStUnited titleWa={titleWa} />
     <MeetOurTeam/>
     </>
   )
