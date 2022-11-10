@@ -16,7 +16,7 @@ const LayoutFull = ({ children, title = "" }) => {
     </HelmetProvider>
 
     <Header/>
-    <Container fluid className='content'>
+    <Container fluid className='content p-0'>
       {children}
     </Container>
     <Footer/>
