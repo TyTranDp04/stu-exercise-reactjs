@@ -9,11 +9,11 @@ const HeaderSection =() =>{
     <Container fluid className="header__mobile">
       <Row className="w-100 m-0">
         <Col xs={3} className="nav__container">
-          <div class="nav__list " onClick={()=> setShowNavBar(!showNavBar)}>
-            <div class="header__menu-icon">
-              <span class="header__menu-icon--dot"></span>
-              <span class="header__menu-icon--dot"></span>
-              <span class="header__menu-icon--dot"></span>
+          <div className="nav__list " onClick={()=> setShowNavBar(!showNavBar)}>
+            <div className="header__menu-icon">
+              <span className="header__menu-icon--dot"></span>
+              <span className="header__menu-icon--dot"></span>
+              <span className="header__menu-icon--dot"></span>
             </div>
           </div>
           {

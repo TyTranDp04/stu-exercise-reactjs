@@ -5,7 +5,7 @@ import logo from '../../assets/images/stlogo.png'
 import Header from '../../../src/components/header/index'
 import Footer from '../../../src/components/footer/index'
 
-const LayoutFull = ({ children, title = "" }) => {
+const LayoutFull = ({ children, title }) => {
 
   return (<>
     <HelmetProvider>
@@ -16,7 +16,7 @@ const LayoutFull = ({ children, title = "" }) => {
     </HelmetProvider>
 
     <Header/>
-    <Container fluid className='content' style={{'padding':'0px'}}>
+    <Container fluid className='content' style={{'padding': '0'}}>
       {children}
     </Container>
     <Footer/>

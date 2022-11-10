@@ -1,8 +1,8 @@
 import React from 'react'
-import LetTask from '../../components/letTask'
+import LetTask from '../../components/LetTalk'
 import LayoutFull from '../../layout/layoutFull'
 
-const LetTaskPage = () => {
+const LetTalkPage = () => {
   return (
     <LayoutFull title="Let&#8217;s talk &#8211; ST United">
       <LetTask />
@@ -10,4 +10,4 @@ const LetTaskPage = () => {
   )
 }
 
-export default LetTaskPage
+export default LetTalkPage

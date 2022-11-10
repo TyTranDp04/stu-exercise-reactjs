@@ -13,14 +13,14 @@ const NavBar = () =>{
                         <Navigation value="HOME" handle = {{showSubmenu, setShowSubmenu}} link="/"/>
                         <Navigation value="WHAT WE DO" 
                         listoption = {[
-                            {title:"ST SOFTWARE", link:""},
-                            {title:"ST DIGITAL", link:""},
-                            {title:"ST INCUBATION", link:""}
+                            {title:"ST SOFTWARE", link:"/st-software/"},
+                            {title:"ST DIGITAL", link:"/st-digital/"},
+                            {title:"ST INCUBATION", link:"/st-incubation/"}
                         ]} handle = {{showSubmenu, setShowSubmenu}} link="/what-we-do"/>
-                        <Navigation value="WHO WE ARE" handle = {{showSubmenu, setShowSubmenu}} link="/who-we-are"/>
-                        <Navigation value="PORTFOLIO" handle = {{showSubmenu, setShowSubmenu}} link="/portfolio"/>
-                        <Navigation value="JOIN US" handle = {{showSubmenu, setShowSubmenu}} link="/join-us"/>
-                        <Navigation value="LET'S TALK" handle = {{showSubmenu, setShowSubmenu}} link="/lets-talk"/>
+                        <Navigation value="WHO WE ARE" handle = {{showSubmenu, setShowSubmenu}} link="/who-we-are/"/>
+                        <Navigation value="PORTFOLIO" handle = {{showSubmenu, setShowSubmenu}} link="/portfolio/"/>
+                        <Navigation value="JOIN US" handle = {{showSubmenu, setShowSubmenu}} link="/join-us/"/>
+                        <Navigation value="LET'S TALK" handle = {{showSubmenu, setShowSubmenu}} link="/lets-talk/"/>
                     </ul>
                 </Col>
             </Row>
