@@ -5,9 +5,10 @@ import OurMissionOurVision from './ourMissionOurVision'
 import WeAreStUnited from './weAreStUnited'
 
 const WhoWeAre = () => {
+  const titleWa = "WE ARE ST UNITED";
   return (
     <>
-    <BannerWWA/>
+    <BannerWWA titleWa={titleWa} />
     <OurMissionOurVision/>
     <WeAreStUnited/>
     <MeetOurTeam/>
