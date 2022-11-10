@@ -1,6 +1,6 @@
 import React from 'react'
-import BannerLetTask from './bannerLetTask'
-import ContentLetTask from './contentLetTask'
+import BannerLetTask from './BannerLetTask'
+import ContentLetTask from './ContentLetTask'
 
 const LetTask = () => {
   return (

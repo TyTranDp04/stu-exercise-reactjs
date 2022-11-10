@@ -1,5 +1,5 @@
 import React from 'react'
-import LetTask from '../../components/letTask'
+import LetTask from '../../components/LetTalk'
 import LayoutFull from '../../layout/layoutFull'
 
 const LetTaskPage = () => {
