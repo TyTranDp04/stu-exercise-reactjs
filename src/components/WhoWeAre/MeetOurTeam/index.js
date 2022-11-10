@@ -25,7 +25,6 @@ const MeetOurTeam = ({ title }) => {
   useEffect(() => {
     dispatch(getListDataTeam());
   }, [dispatch]);
-  console.log(data);
   return (
     <Container className="container-fluid">
       <Body className="container">

@@ -1,5 +1,13 @@
 // {
 //   "compilerOptions": {
+//     "module": "commonJS",
+//     "target": "es6",
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./src/*"],
+//     }
+//   }
+// }
 //     "baseUrl": ".",
 //     "paths": {
 //       "@/*":["src/*"]

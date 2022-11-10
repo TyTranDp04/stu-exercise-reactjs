@@ -13,7 +13,7 @@ export const H1 = styled.h1`
   color: #ffffff;
   font-family: Roboto;
   font-size: 43px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 43px;
   margin: 0px 0px 10px;
   text-align: center;
@@ -23,7 +23,7 @@ export const H2 = styled.h2`
   color: #ffffff;
   font-family: Roboto;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 24px;
   margin: 0px 0px 20px;
   text-align: center;

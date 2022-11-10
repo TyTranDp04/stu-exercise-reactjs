@@ -17,6 +17,7 @@ const HeaderContainer = styled.div`
   }
   position:absolute;
   width: 100%;
+  z-index: 1000;
   .header__section{
     .header__logo{
       position: relative;
@@ -55,7 +56,7 @@ const HeaderContainer = styled.div`
       padding: 0 0 4px 0;
       .nav__link--href{
         padding: 0 15px;
-        font-weight: 500;                       
+        font-weight: 700;                       
         font-size: 15px;
         color: #fff;
         
