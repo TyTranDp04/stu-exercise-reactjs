@@ -1,6 +1,6 @@
 import React from 'react'
-import BannerJoinUs from './bannerJoinUs'
-import ContentJoinUs from './contentJoinUs'
+import BannerJoinUs from './BannerJoinUs'
+import ContentJoinUs from './ContentJoinUs'
 
 const JoinUs = () => {
   return (
