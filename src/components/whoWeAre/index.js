@@ -1,8 +1,8 @@
 import React from "react";
-import BannerWWA from "./BannerWWA";
-import MeetOurTeam from "./MeetOurTeam";
-import OurMissionOurVision from "./OurMissionOurVision";
-import WeAreStUnited from "./WeAreStUnited";
+import BannerWWA from "./bannerWWA";
+import MeetOurTeam from "./meetOurTeam";
+import OurMissionOurVision from "./ourMissionOurVision";
+import WeAreStUnited from "./weAreStUnited";
 
 const WhoWeAre = () => {
   const titleStories = "...and many other cool stories";
