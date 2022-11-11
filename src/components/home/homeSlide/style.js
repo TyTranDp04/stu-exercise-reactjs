@@ -57,7 +57,7 @@ export const Container = styled.div`
 }
 .slick-prev, .slick-next {
   top: 47%;
-  z-index: 1000;
+  z-index: 10;
   cursor: pointer;
   background: rgba(0,0,0,0.5);
   width: 40px;
