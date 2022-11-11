@@ -2,7 +2,7 @@ import { faAngleUp, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   FooterConTainer,
@@ -43,10 +43,12 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+
 const openInNewTab = (url) => {
   window.open(url, "_blank");
 };
@@ -81,6 +83,10 @@ const Footer = () => {
       FollowPage === followPageContent ? "Followed" : FollowPage
     );
   };
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   return (
     <>
       <FooterConTainer className="container-fluid">
@@ -202,7 +208,10 @@ const Footer = () => {
       <ButtonOnToTop
         className="BtnTop"
         id="myBtn"
-        onClick={() => topFunction()}
+        // onClick={() => topFunction()}
+        onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}
       >
         <FontAwesomeIcon icon={faAngleUp} />
       </ButtonOnToTop>

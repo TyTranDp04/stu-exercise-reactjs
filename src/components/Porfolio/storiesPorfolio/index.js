@@ -30,10 +30,10 @@ import {
   StoriesTitleWrapper
 } from "../../WhatWeDo/StSoftware/StoriesStSoftware/stye";
 import { PortfolioBtn, PortLink } from "./style";
+import {Link} from 'react-router-dom'
 
 const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
   const PortDow = "Download full stories";
-  const PortLinkUrl = 'https://storage.googleapis.com/stunited/STU%20SUCCESS%20STORIES.pdf';
   const stSoftwareStoriesData = useSelector(
     (state) => state.DataPortfolio.PortfolioState
   );
@@ -49,8 +49,8 @@ const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
       <StoriesFluid className="container-fluid" style={{paddingBottom: '0'}}>
         <StoriesContainer className="container">
           <StoriesTitleWrapper className="row">
-            <StoriesTitleH2>{storiesTitle}</StoriesTitleH2>
-            <StoriesTitleH3>{storiesDesc}</StoriesTitleH3>
+            <StoriesTitleH2 style={{fontWeight :"bold", color:"black"}}>{storiesTitle}</StoriesTitleH2>
+            <StoriesTitleH3 style={{ color:"black"}}>{storiesDesc}</StoriesTitleH3>
           </StoriesTitleWrapper>
           <StoriesItemContainer className="row">
             {data?.map((item) => (
@@ -110,7 +110,7 @@ const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
             ))}
           </StoriesItemContainer>
           <PortfolioBtn>
-            <PortLink target="true" href={PortLinkUrl}>{PortDow}</PortLink>
+            <PortLink><Link to="/" >{PortDow}</Link></PortLink>
           </PortfolioBtn>
         </StoriesContainer>
       </StoriesFluid>
