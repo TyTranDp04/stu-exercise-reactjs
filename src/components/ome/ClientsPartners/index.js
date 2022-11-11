@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Slider from "react-slick";
 
 import { useDispatch, useSelector } from 'react-redux';
-import { getListDataPartners } from '../../../store/actions/home';
+import { getListDataPartners } from '../../../store/actions/Home';
 import PartnersStyled from './style';
 
 const ClientsPartners = () => {

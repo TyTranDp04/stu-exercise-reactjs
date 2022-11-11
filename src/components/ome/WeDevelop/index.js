@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getListDataWeDevelop } from '../../../store/actions/home';
+import { getListDataWeDevelop } from '../../../store/actions/Home';
 import { Body, Card, CardFooter, CardHeader, CardInner, Container, Content, H3, H3Title, H4, Image, Link, Text, Wrapper } from './style';
 
 const WeDevelop = () => {

@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Slider from "react-slick";
-import { getListDataSlide } from '../../../store/actions/home';
+import { getListDataSlide } from '../../../store/actions/Home';
 import {
   CardFooter,
   Container,
