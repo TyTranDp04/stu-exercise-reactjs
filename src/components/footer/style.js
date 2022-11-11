@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import imgFb from "../../assets/images/imgFace.png"
+import StFoterImg from "../../assets/images/STFooterImg.jpg"
+import StFoterLogo from "../../assets/images/STFooterLogo.jpg"
 
 export const FooterConTainer = styled.div`
   background-color: #181818;
@@ -142,7 +144,8 @@ padding: 0 15px;
 export const ImgST = styled.div`
 width: 90%;
 height: 90%;
-background-image: url("https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/288421545_755593505796655_6753437097693424822_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-7&_nc_sid=dd9801&_nc_ohc=_S3RjLrmJ24AX8gy4ox&_nc_ht=scontent.fdad3-6.fna&edm=AA7a7sEEAAAA&oh=00_AfC4c1t_fwfUDKukyHY5aYXp7Z3KtrdSUupgrl9kogqbrg&oe=6370371D");
+background-image: url(${StFoterImg});
+>>>>>>> 6858025a23c9e9b6c8325679e5937f2839e25c01
 background-position: 40% 75%;
 background-repeat: no-repeat;
 @media screen and (max-width: 1200px){
@@ -168,7 +171,7 @@ export const ImgTopLogo = styled.div`
   border: solid white;
   margin: 5px;
   cursor: pointer;
-  background-image: url("https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-1/287043794_752220302800642_6482007975046590175_n.jpg?stp=cp0_dst-jpg_p74x74&_nc_cat=110&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=uvYh6335KdQAX9t-6jn&_nc_ht=scontent.fdad3-1.fna&edm=AA7a7sEEAAAA&oh=00_AfCkVaPoqFnh1USz32RQpfIf1Q3R59-031WZh3zPFM98Hw&oe=6370B7DF");
+  background-image: url(${StFoterLogo});
 `;
 export const ImgTopFollow = styled.div`
   font-size: 12px;
