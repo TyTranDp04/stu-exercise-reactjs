@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getListDataPartners } from "../../actions/home/index";
+import { getListDataPartners } from "../../actions/Home/index";
 
 
 

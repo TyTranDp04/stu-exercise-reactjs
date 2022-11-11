@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentHome from '../../components/home'
+import ContentHome from '../../components/Home'
 import LayoutFull from '../../layout/layoutFull'
 
 const HomePage = () => {

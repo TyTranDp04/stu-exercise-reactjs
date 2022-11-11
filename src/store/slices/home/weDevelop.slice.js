@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getListDataWeDevelop } from "../../actions/home";
+import { getListDataWeDevelop } from "../../actions/Home";
 
 const initialState = {
   weDevelopState: {
