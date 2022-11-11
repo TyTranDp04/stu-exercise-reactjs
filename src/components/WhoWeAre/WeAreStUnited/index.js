@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  dataTextLeft,
-  dataTextRight,
-} from "../../../constants/ourteam";
+import { dataTextLeft, dataTextRight } from "../../../constants/ourteam";
 import {
   Body,
   BodyWA,

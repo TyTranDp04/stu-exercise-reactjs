@@ -75,6 +75,6 @@ export const Avatar = styled.img`
   height: 150px;
 `;
 export const H4 = styled.h4`
-font-weight:500;
-line-height:20px;
+  font-weight: 500;
+  line-height: 20px;
 `;
