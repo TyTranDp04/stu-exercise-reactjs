@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import imgFb from "../../assets/images/imgFace.png"
 
 export const FooterConTainer = styled.div`
   background-color: #181818;
@@ -128,12 +128,17 @@ export const RowST = styled.div`
 export const FooterImg = styled.div`
 width:34%;
 padding: 0 15px;
-@media screen and (max-width: 990px){
+@media screen and (max-width: 991px){
     width: 60%;
     height: 150px;
   padding: 0 15px;
   }
-
+@media screen and (max-width: 700px){
+    width: 100%;
+    height: 150px;
+  padding: 0 15px;
+}
+  
 
 `;
 export const ImgST = styled.div`
@@ -209,7 +214,7 @@ export const ImgDescFollowPage = styled.div`
     width: 20%;
     height: 100%;
     left: 0;
-    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/Ooh6Kl-jrdA.png);
+    background-image: url(${imgFb});
     cursor: pointer;
   }
 `;

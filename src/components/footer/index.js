@@ -29,9 +29,8 @@ import {
   ImgST,
   AddressUSRow,
   ButtonOnToTop,
-  ImgDescContactImg
+  ImgDescContactImg,
 } from "./style";
-
 
 window.onscroll = () => scrollFunction();
 
@@ -48,7 +47,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-  const Footer = () => {
+const Footer = () => {
   const Menu = "MENU";
   const Home = "HOME";
   const WhatWeDo = "WHAT WE DO";
@@ -73,11 +72,13 @@ function topFunction() {
   const openInNewTab = (url) => {
     window.open(url, "_blank");
   };
-  const [followPageContent, setFollowPageContent] = useState(FollowPage)
+  const [followPageContent, setFollowPageContent] = useState(FollowPage);
   // const [isShow, setIsshow] = useState(true)
   const updateFollowPageContent = () => {
-    setFollowPageContent(FollowPage === followPageContent ?  'Followed': FollowPage)
-  }
+    setFollowPageContent(
+      FollowPage === followPageContent ? "Followed" : FollowPage
+    );
+  };
   return (
     <>
       <FooterConTainer className="container-fluid">
@@ -89,16 +90,14 @@ function topFunction() {
                 <Row>
                   <MenuTopContent
                     className="about"
-                    onClick={() =>
-                      openInNewTab("https://stunited.vn/")
-                    }
+                    onClick={() => openInNewTab("/home")}
                   >
                     {Home}
                   </MenuTopContent>
                   <MenuTopContent
                     className="about"
                     onClick={() =>
-                      openInNewTab("https://stunited.vn/st-software/")
+                      openInNewTab("/StSoftwarePage")
                     }
                   >
                     {WhatWeDo}
@@ -107,7 +106,7 @@ function topFunction() {
                     <MenuTopContent
                       className="about"
                       onClick={() =>
-                        openInNewTab("https://stunited.vn/st-software/")
+                        openInNewTab("/StSoftwarePage")
                       }
                     >
                       {SoftWare}
@@ -133,32 +132,28 @@ function topFunction() {
                 <Row>
                   <MenuTopContent
                     className="about"
-                    onClick={() =>
-                      openInNewTab("https://stunited.vn/who-we-are/")
-                    }
+                    onClick={() => openInNewTab("/who-we-are")}
                   >
                     {WhoWeAre}
                   </MenuTopContent>
                   <MenuTopContent
                     className="about"
                     onClick={() =>
-                      openInNewTab("https://stunited.vn/portfolio/")
+                      openInNewTab("/Porfolio")
                     }
                   >
                     {Portfolio}
                   </MenuTopContent>
                   <MenuTopContent
                     className="about"
-                    onClick={() =>
-                      openInNewTab("https://stunited.vn/join-us/")
-                    }
+                    onClick={() => openInNewTab("/JoinUs")}
                   >
                     {Join}
                   </MenuTopContent>
                   <MenuTopContent
                     className="about"
                     onClick={() =>
-                      openInNewTab("https://stunited.vn/lets-talk/")
+                      openInNewTab("/lets-talk")
                     }
                   >
                     {Let}
@@ -183,9 +178,7 @@ function topFunction() {
                 <FontAwesomeIcon icon={faEnvelope} />
                 <AddressUS
                   className="about"
-                  onClick={() =>
-                    openInNewTab("mailto:hello@stunited.vn")
-                  }
+                  onClick={() => openInNewTab("mailto:hello@stunited.vn")}
                 >
                   {Mail}
                 </AddressUS>
@@ -214,13 +207,18 @@ function topFunction() {
               <ImgDesc onClick={updateFollowPageContent}>
                 <ImgDescFollowPage>{followPageContent}</ImgDescFollowPage>
                 <ImgDescContactImg>
-                <FontAwesomeIcon style={{
+                  <FontAwesomeIcon
+                    style={{
                       paddingTop: "6px",
-                      paddingRight: "3px"
-                }} icon={faEnvelope} />
-                <ImgDescContact onClick={() =>
-                      openInNewTab("https://stunited.vn//")
-                    }>{Contactus}</ImgDescContact>
+                      paddingRight: "3px",
+                    }}
+                    icon={faEnvelope}
+                  />
+                  <ImgDescContact
+                    onClick={() => openInNewTab("https://stunited.vn//")}
+                  >
+                    {Contactus}
+                  </ImgDescContact>
                 </ImgDescContactImg>
               </ImgDesc>
             </ImgST>
@@ -230,23 +228,14 @@ function topFunction() {
           <ContainerDescContent>{ContainerLast}</ContainerDescContent>
         </ContainerDesc>
       </FooterConTainer>
-      <div style={{height:"2000px"}}>
-
-      </div>
-      
-  
-        <ButtonOnToTop
+      <ButtonOnToTop
         className="BtnTop"
         id="myBtn"
         onClick={() => topFunction()}
       >
         <FontAwesomeIcon icon={faAngleUp} />
-      </ButtonOnToTop> 
-  
-      
-      
+      </ButtonOnToTop>
     </>
   );
 };
-
 export default Footer;
