@@ -1,14 +1,17 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getListJoinUs } from "../../../store/actions/Joinus";
+import { getListJoinUs } from "../../../store/actions/joinus";
+import Loading from "../../Loading";
 import {
   Body,
   Card,
   CardFooter,
   CardHeader,
+  CardWrapper,
   Container,
   Content,
   H3,
+  H3Title,
   Image,
   Link,
   Text,
@@ -19,6 +22,7 @@ const ContentJoinUs = () => {
   const dataJoinUs = useSelector((state) => state.dataTeam.dataTeamState);
   const dispatch = useDispatch();
   const data = dataJoinUs.data;
+  const loading = dataJoinUs.loading;
   useEffect(() => {
     dispatch(getListJoinUs());
   }, [dispatch]);
@@ -26,25 +30,27 @@ const ContentJoinUs = () => {
     <Container className="Container-fluid">
       <Body className="container">
         <Wrapper>
-          <H3>
+          <H3Title>
             Building a startup is hard, so we build a family to make it more
             enjoyable.
-          </H3>
+          </H3Title>
         </Wrapper>
-        <Content className="row mt-5 mb-5">
+        {loading ? <Loading/> : <Content className="row mt-5 mb-5">
           {data?.map((text) => (
-            <Card className="col-lg-3 col-md-6 col-sm-12 bg-white" key={text.id}>
-              <CardHeader key={text.id}>
-                <Image src={text.image}></Image>
-              </CardHeader>
-              <CardFooter>
-                <H3>{text.title}</H3>
-                <Text>{text.text}</Text>
-                <Link href={text.link}>Interesting?</Link>
-              </CardFooter>
-            </Card>
+            <CardWrapper className="col-sm-12 col-md-6 col-lg-3" key={text.id}>
+              <Card>
+                <CardHeader key={text.id}>
+                  <Image src={text.image}></Image>
+                </CardHeader>
+                <CardFooter>
+                  <H3>{text.title}</H3>
+                  <Text>{text.text}</Text>
+                  <Link href={text.link}>Interesting?</Link>
+                </CardFooter>
+              </Card>
+            </CardWrapper>
           ))}
-        </Content>
+        </Content>}
       </Body>
     </Container>
   );

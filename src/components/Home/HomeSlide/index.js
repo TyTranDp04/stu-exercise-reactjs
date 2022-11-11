@@ -2,7 +2,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Slider from "react-slick";
-import { getListDataSlide } from '../../../store/actions/Home';
+import { getListDataSlide } from '../../../store/actions/home';
+import LoadingHome from '../../Loading/LoadingHome';
 import {
   CardFooter,
   Container,
@@ -10,9 +11,10 @@ import {
 } from "./style";
 
 const HomeSlide = () => {
-  const dispatch = useDispatch()
   const dataHomeSlide = useSelector(state => state.dataHomeSlide.dataHomeSlideState)
+  const dispatch = useDispatch()
   const data = dataHomeSlide.data
+  const loading = dataHomeSlide.loading;
   useEffect(() => {
     dispatch(getListDataSlide())
   }, [dispatch])
@@ -26,9 +28,11 @@ const HomeSlide = () => {
     autoplay: true,
   };
   return (
-    <Container className="container-fluid p-0">
+    <>
+      {loading ? <LoadingHome /> 
+      : <Container className="container-fluid p-0">
         <Slider {...settings}>
-          {data.map((item) => (
+          {data?.map((item) => (
             <div key={item.id}>
               <div>
                 <ImageCard src={item.src}></ImageCard>
@@ -41,7 +45,9 @@ const HomeSlide = () => {
             </div>
           ))}
         </Slider>
-      </Container>
+      </Container>}
+
+    </>
   )
 }
 

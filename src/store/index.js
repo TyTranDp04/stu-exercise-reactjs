@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { listDataPartnersReducer } from "./slices/Home/listDataPartners.slice";
-import { dataHomeSlideReducer } from "./slices/Home/dataHomeSlide";
-import { TypicalSuccessfulReducer } from "./slices/Home/typicalSuccessful.slice";
-import { weDevelopReducer } from "./slices/Home/weDevelop.slice";
+import { listDataPartnersReducer } from "./slices/home/listDataPartners.slice";
+import { dataHomeSlideReducer } from "./slices/home/dataHomeSlide";
+import { TypicalSuccessfulReducer } from "./slices/home/typicalSuccessful.slice";
+import { weDevelopReducer } from "./slices/home/weDevelop.slice";
 import { PortfolioReducer } from "./slices/Portfolio";
 import { stDigitalReducer } from "./slices/WhatWeDo/StDigital.slice";
 import { stDigitalMeetReducer } from "./slices/WhatWeDo/StDigitalMeet";
