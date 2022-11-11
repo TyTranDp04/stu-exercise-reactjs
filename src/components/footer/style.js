@@ -79,10 +79,7 @@ export const MenuDescContentLi = styled.li``;
 export const ContactTop = styled.div``;
 export const ContactDesc = styled.div``;
 export const ContactContent = styled.div``;
-export const MenuContent = styled.div`
-  display: flex;
-  color: white;
-`;
+
 export const FooterDesc = styled.div`
   padding: 0 15px;
   width:33%;
@@ -125,6 +122,7 @@ display:flex;
 export const RowST = styled.div`
   padding-left: 20px;
 `;
+
 export const FooterImg = styled.div`
 width:34%;
 padding: 0 15px;
@@ -274,4 +272,23 @@ text-align: center;
 font-size: 24px!important;
 display:none;
 }
+`;
+export const MenuContent = styled.div`
+  display: flex;
+  color: white;
+  ${Row} > ${MenuTopContent} > a{
+    text-decoration: none;
+    color: white;
+  }
+  ${Row} > ${MenuTopContent} > a:hover {
+    color: #00aeef;
+  }
+
+  ${Row} > ${RowST} > ${MenuTopContent} > a{
+    text-decoration: none;
+    color: white;
+  }
+  ${Row} > ${RowST} > ${MenuTopContent} > a:hover {
+    color: #00aeef;
+  }
 `;

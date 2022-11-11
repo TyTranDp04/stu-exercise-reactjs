@@ -3,6 +3,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FooterConTainer,
   FooterTop,
@@ -46,6 +47,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+const openInNewTab = (url) => {
+  window.open(url, "_blank");
+};
 
 const Footer = () => {
   const Menu = "MENU";
@@ -69,9 +73,7 @@ const Footer = () => {
   const Content = "ST United";
   const Follower = "1,694 followers";
   const ContainerLast = "Copyright © 2019 by ST United.";
-  const openInNewTab = (url) => {
-    window.open(url, "_blank");
-  };
+
   const [followPageContent, setFollowPageContent] = useState(FollowPage);
   // const [isShow, setIsshow] = useState(true)
   const updateFollowPageContent = () => {
@@ -88,76 +90,23 @@ const Footer = () => {
               <Menu style={{ padding: "0px" }}>{Menu}</Menu>
               <MenuContent>
                 <Row>
-                  <MenuTopContent
-                    className="about"
-                    onClick={() => openInNewTab("/home")}
-                  >
-                    {Home}
-                  </MenuTopContent>
-                  <MenuTopContent
-                    className="about"
-                    onClick={() =>
-                      openInNewTab("/StSoftwarePage")
-                    }
-                  >
-                    {WhatWeDo}
-                  </MenuTopContent>
+                  <MenuTopContent className="about"><Link to='/'>{Home}</Link></MenuTopContent>
+                  <MenuTopContent className="about"><Link to='/st-software/'>{WhatWeDo}</Link></MenuTopContent>
                   <RowST>
-                    <MenuTopContent
-                      className="about"
-                      onClick={() =>
-                        openInNewTab("/StSoftwarePage")
-                      }
-                    >
-                      {SoftWare}
+                    <MenuTopContent className="about">
+                    <Link to='/st-software/'>{SoftWare}</Link>
                     </MenuTopContent>
-                    <MenuTopContent
-                      className="about"
-                      onClick={() =>
-                        openInNewTab("https://stunited.vn/st-digital/")
-                      }
-                    >
-                      {Digital}
-                    </MenuTopContent>
-                    <MenuTopContent
-                      className="about"
-                      onClick={() =>
-                        openInNewTab("https://stunited.vn/st-incubation/")
-                      }
-                    >
-                      {Incubation}
+                    <MenuTopContent className="about"><Link to='/st-digital/'>{Digital}</Link></MenuTopContent>
+                    <MenuTopContent className="about">
+                    <Link to='/st-incubation/'>{Incubation}</Link>
                     </MenuTopContent>
                   </RowST>
                 </Row>
                 <Row>
-                  <MenuTopContent
-                    className="about"
-                    onClick={() => openInNewTab("/who-we-are")}
-                  >
-                    {WhoWeAre}
-                  </MenuTopContent>
-                  <MenuTopContent
-                    className="about"
-                    onClick={() =>
-                      openInNewTab("/Porfolio")
-                    }
-                  >
-                    {Portfolio}
-                  </MenuTopContent>
-                  <MenuTopContent
-                    className="about"
-                    onClick={() => openInNewTab("/JoinUs")}
-                  >
-                    {Join}
-                  </MenuTopContent>
-                  <MenuTopContent
-                    className="about"
-                    onClick={() =>
-                      openInNewTab("/lets-talk")
-                    }
-                  >
-                    {Let}
-                  </MenuTopContent>
+                  <MenuTopContent className="about"><Link to='/who-we-are/'>{WhoWeAre}</Link></MenuTopContent>
+                  <MenuTopContent className="about"><Link to='//portfolio/'>{Portfolio}</Link></MenuTopContent>
+                  <MenuTopContent className="about"><Link to='/join-us/'>{Join}</Link></MenuTopContent>
+                  <MenuTopContent className="about"><Link to='/lets-talk/'>{Let}</Link></MenuTopContent>
                 </Row>
               </MenuContent>
             </FooterContent>
@@ -204,8 +153,8 @@ const Footer = () => {
                   <ImgTopFollow>{Follower}</ImgTopFollow>
                 </ImgTopFollower>
               </ImgTop>
-              <ImgDesc onClick={updateFollowPageContent}>
-                <ImgDescFollowPage>{followPageContent}</ImgDescFollowPage>
+              <ImgDesc >
+                <ImgDescFollowPage onClick={updateFollowPageContent}>{followPageContent}</ImgDescFollowPage>
                 <ImgDescContactImg>
                   <FontAwesomeIcon
                     style={{
@@ -214,11 +163,10 @@ const Footer = () => {
                     }}
                     icon={faEnvelope}
                   />
-                  <ImgDescContact
-                    onClick={() => openInNewTab("https://stunited.vn//")}
-                  >
-                    {Contactus}
-                  </ImgDescContact>
+                  <ImgDescContact ><Link to='/' style={{
+                     textDecoration:"none",
+                     color:"black"
+                  }}>{Contactus}</Link></ImgDescContact>
                 </ImgDescContactImg>
               </ImgDesc>
             </ImgST>
