@@ -8,6 +8,9 @@ const StIncubation = () => {
   const bannerDesc = "We're not a mentor, expert or coach whatsoever. We are a founder and fight together";
   const stUnitedStrong = <strong>ST United</strong>;
   const iotSpaceStrong = <strong>IoT Space</strong>;
+  const stIncubationTitle = 'Our incubating projects';
+  const stIncubationDesc = 'We are supporting for these cool teams';
+
   return (
     <>
     <BannerStIncubation
@@ -19,7 +22,10 @@ const StIncubation = () => {
     stUnitedStrong={stUnitedStrong}
     iotSpaceStrong={iotSpaceStrong}
     />
-    <OurProjectStIncubation/>
+    <OurProjectStIncubation
+    stIncubationTitle={stIncubationTitle}
+    stIncubationDesc={stIncubationDesc}
+    />
     </>
   )
 }

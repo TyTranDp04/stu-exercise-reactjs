@@ -44,7 +44,7 @@ export const CategoriesItemWrapper = styled.div`
 `
 export const CategoriesItem = styled.div`
   display: flex;
-  padding: 0 20px;
+  padding: 0 10px;
 
   @media (max-width: 1200px) {
     padding: 0;

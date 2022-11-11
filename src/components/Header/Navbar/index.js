@@ -16,7 +16,7 @@ const NavBar = () =>{
                             {title:"ST SOFTWARE", link:"/st-software/"},
                             {title:"ST DIGITAL", link:"/st-digital/"},
                             {title:"ST INCUBATION", link:"/st-incubation/"}
-                        ]} handle = {{showSubmenu, setShowSubmenu}} link="/what-we-do"/>
+                        ]} handle = {{showSubmenu, setShowSubmenu}} link="/st-software/"/>
                         <Navigation value="WHO WE ARE" handle = {{showSubmenu, setShowSubmenu}} link="/who-we-are/"/>
                         <Navigation value="PORTFOLIO" handle = {{showSubmenu, setShowSubmenu}} link="/portfolio/"/>
                         <Navigation value="JOIN US" handle = {{showSubmenu, setShowSubmenu}} link="/join-us/"/>
