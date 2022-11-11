@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getListDataTypicalSuccessful } from "../../actions/home";
+import { getListDataTypicalSuccessful } from "../../actions/Home";
 
 const initialState = {
   typicalSuccessfulState: {

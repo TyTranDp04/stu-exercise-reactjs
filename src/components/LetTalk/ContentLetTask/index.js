@@ -11,7 +11,6 @@ import {
   HeaderForm,
   Input,
   Label,
-  Link,
   Row,
   Submit,
   Text,
@@ -19,6 +18,7 @@ import {
 } from "./style";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 const ContentLetTask = () => {
   const {
     register,
@@ -32,7 +32,7 @@ const ContentLetTask = () => {
         <Header className="col-12 text-start">
           <div>
             <Text>
-              <Link href="/">Home</Link> &#62; let's talk
+              <Link to="/">Home</Link> &#62; let's talk
             </Text>
           </div>
           <H1>Let't talk</H1>

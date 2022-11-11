@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getListDataSlide } from "../../actions/home";
+import { getListDataSlide } from "../../actions/Home";
 
 const initialState = {
   dataHomeSlideState: {
