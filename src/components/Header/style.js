@@ -81,7 +81,6 @@ const HeaderContainer = styled.div`
         }
         .sub__menu-option{
           padding: 0;
-          background-color: red; 
           top: 230%;
           position: absolute;
           list-style: none;
@@ -159,7 +158,8 @@ const HeaderContainer = styled.div`
             margin: 0;
             width: 100%;
             flex-direction: column;
-            background-color: rgba(255,255,255,0.95);
+            background-color: #fff;
+            z-index; 100;
             box-shadow: 0 4px 5px rgb(0 0 0 / 15%);
             .nav__link{
               border-top: 1px solid #fff;
@@ -173,6 +173,9 @@ const HeaderContainer = styled.div`
                  flex-derection: column;
                 .nav__link--href{
                   left: 0;
+                }
+                .nav__link-content--active{
+                  background-color: color: #004274;
                 }
                 .list__option-icon{
                   display: flex;
@@ -197,6 +200,9 @@ const HeaderContainer = styled.div`
                 top: 100%;
                 display:none;
                 width: 100%;
+                over-flow: hidden;
+                animation: headerNotifyGrowth ease-in 0.3s;
+
                 .nav__link-option{
                   padding: 12px 15px 12px 35px;
                   .nav__link-option--href{
@@ -242,8 +248,9 @@ const HeaderContainer = styled.div`
               
               .sub__menu-option--active{
                 display: block;
-                animation: headerNotifyGrowth ease-in 0.3s;
                 transform-origin: top;
+                visibility: visible;
+                opacity: 1;
                 .nav__link-option{
                   background-color: #30C7FF;
                 }
