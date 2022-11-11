@@ -1,4 +1,4 @@
-import StDigital from "../../../components/WhatWeDo/StDigital"
+import StDigital from "../../../components/whatWeDo/stDigital"
 import LayoutFull from "../../../layout/layoutFull"
 
 const StDigitalPage = () => {

@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getListDataStIncubation } from '../../../../store/actions/WhatWeDo';
 import Loading from '../../../Loading';
-import { StDigitalContainer, StDigitalContainerFluid, StDigitalIntro, StDigitalIntroDesc, StDigitalIntroTitle, StDigitalItemImg, StDigitalWrapper } from '../../StDigital/ContentStDigital/style';
-import { BlockContent, BlockContentH3, BlockContentP, BlockIcon, CategoriesItem, CategoriesItemWrapper, CategoriesWrapper2 } from '../../StSoftware/CategoriesStSoftware/style';
+import { StDigitalContainer, StDigitalContainerFluid, StDigitalIntro, StDigitalIntroDesc, StDigitalIntroTitle, StDigitalItemImg, StDigitalWrapper } from '../../stDigital/ContentStDigital/style';
+import { BlockContent, BlockContentH3, BlockContentP, BlockIcon, CategoriesItem, CategoriesItemWrapper, CategoriesWrapper2 } from '../../stSoftware/CategoriesStSoftware/style';
 
 const ContentStIncubation = ({bannerTitle, stUnitedStrong, iotSpaceStrong}) => {
   const dataStIncubation = useSelector(state => state.stIncubation.stIncubationState);

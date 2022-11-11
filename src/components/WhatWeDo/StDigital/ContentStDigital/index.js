@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { getListDataStDigital } from "../../../../store/actions/WhatWeDo";
 import Loading from "../../../Loading";
-import { BlockContent, BlockContentH3, BlockContentP, BlockIcon, CategoriesItem, CategoriesItemWrapper, CategoriesWrapper2 } from "../../StSoftware/CategoriesStSoftware/style";
+import { BlockContent, BlockContentH3, BlockContentP, BlockIcon, CategoriesItem, CategoriesItemWrapper, CategoriesWrapper2 } from "../../stSoftware/CategoriesStSoftware/style";
 import { StDigitalContainer, StDigitalContainerFluid, StDigitalIntro, StDigitalIntroDesc, StDigitalIntroTitle, StDigitalItemImg, StDigitalWrapper } from "./style";
 
 const ContentStDigital = ({ stDigitalTitle, stDigitalDesc }) => {

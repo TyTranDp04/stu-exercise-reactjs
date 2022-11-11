@@ -28,7 +28,7 @@ import {
   StoriesTitleH2,
   StoriesTitleH3,
   StoriesTitleWrapper
-} from "../../WhatWeDo/StSoftware/StoriesStSoftware/stye";
+} from "../../whatWeDo/stSoftware/StoriesStSoftware/stye";
 import { PortfolioBtn, PortLink } from "./style";
 import { Link } from 'react-router-dom'
 import Loading from "../../Loading";

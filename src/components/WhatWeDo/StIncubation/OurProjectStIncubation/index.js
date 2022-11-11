@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getListDataStIncubationProject } from '../../../../store/actions/WhatWeDo';
 import { StoriesDesciption, StoriesDesignation, StoriesItem, StoriesItemAfter, StoriesItemBefore, StoriesItemContainer, StoriesItemImg, StoriesItemInner, StoriesItemName, StoriesItemWrapper, StoriesSocial, StoriesSocialFb, StoriesSocialFbA, StoriesSocialLinked, StoriesSocialLinkedA } from '../../../TypicalSuccessfulStories/style';
-import { StoriesContainer, StoriesFluid, StoriesTitleH2, StoriesTitleH3, StoriesTitleWrapper } from '../../StSoftware/StoriesStSoftware/stye';
+import { StoriesContainer, StoriesFluid, StoriesTitleH2, StoriesTitleH3, StoriesTitleWrapper } from '../../stSoftware/StoriesStSoftware/stye';
 
 const OurProjectStIncubation = ({ stIncubationTitle, stIncubationDesc }) => {
   const dataStIncubationProject = useSelector(state => state.stIncubationProject.stIncubationProjectState);
