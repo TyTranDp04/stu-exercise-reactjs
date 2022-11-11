@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getListJoinUs } from "../../../store/actions/Joinus";
+import { getListJoinUs } from "../../../store/actions/joinus";
 import {
   Body,
   Card,
