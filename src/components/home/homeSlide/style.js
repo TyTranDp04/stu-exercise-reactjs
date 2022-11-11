@@ -21,6 +21,11 @@ export const Container = styled.div`
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.4);;
   }
+  .slick-slide img{
+    width:100%;
+    object-fit: cover;
+    height: 100vh;
+  }
 .slick-slider .slick-dots{
   left: 0px;
   bottom: 20px;
@@ -50,19 +55,16 @@ export const Container = styled.div`
 .slick-slider .slick-dots li button:hover{
   background-color: #fff;
 }
-
-
-
 .slick-prev, .slick-next {
   top: 47%;
-  z-index: 100;
+  z-index: 1000;
   cursor: pointer;
   background: rgba(0,0,0,0.5);
   width: 40px;
   height: 40px;
   border-radius: 20px;
   transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 .slick-prev{
   left: 20px;
@@ -90,11 +92,7 @@ export const Container = styled.div`
 
 }
 
-.slick-slide img{
-  width:100%;
-  object-fit: cover;
-  height: 100vh;
-}
+
 
  `
 export const ImageCard = styled.img`

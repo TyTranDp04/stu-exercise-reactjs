@@ -62,7 +62,7 @@ const HomeSlide = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    // autoplay: true,
+    autoplay: true,
   };
   return (
     <Container className="container-fluid p-0">
