@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { dataHomeSlideReducer } from "./slices/home/dataHomeSlide";
 import { TypicalSuccessfulReducer } from "./slices/home/typicalSuccessful.slice";
 import { PortfolioReducer } from "./slices/Portfolio";
 import { stDigitalReducer } from "./slices/WhatWeDo/StDigital.slice";
@@ -9,6 +10,7 @@ import { dataTeamReducer } from "./slices/WhoWeAre/OurTeam.slice";
 
 const rootReducer = {
   typicalSuccessful: TypicalSuccessfulReducer,
+  dataHomeSlide: dataHomeSlideReducer,
   stSoftware: stSoftwareReducer,
   stSoftwareStories: stSoftwareStoriesReducer,
   dataTeam: dataTeamReducer,
