@@ -51,7 +51,7 @@ const MeetOurTeam = ({ title }) => {
       </Body>
       <FooterBtn className="col-12 pt-5 text-end mb-5">
         <Link href="/">
-        <Btn className="p-3">Wanna join us</Btn>
+          <Btn className="p-3">Wanna join us</Btn>
         </Link>
       </FooterBtn>
     </Container>

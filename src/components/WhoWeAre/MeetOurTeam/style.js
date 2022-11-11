@@ -82,19 +82,19 @@ export const H1 = styled.h1`
 `;
 
 export const FooterBtn = styled.div`
-padding-right: 20px;
+  padding-right: 20px;
 `;
 export const Btn = styled.button`
-background-color:#f5b14b;
-border-color:#f5b14b;
-border-radius:5px;
-border-style:solid;
-border-width:1px;
-color:#f7f7f7;
-display:inline-block;
-font-family:Roboto;
-font-size:14px;
-font-weight:300;
-padding:14px 20px;
-text-align:center;
+  background-color: #f5b14b;
+  border-color: #f5b14b;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: #f7f7f7;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 14px 20px;
+  text-align: center;
 `;

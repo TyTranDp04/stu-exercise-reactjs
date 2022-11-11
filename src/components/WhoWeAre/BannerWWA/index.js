@@ -1,5 +1,13 @@
 import React from "react";
-import {BackgroundColor, Banner, Container, Content, H1, H2, ImgBanner } from "./style";
+import {
+  BackgroundColor,
+  Banner,
+  Container,
+  Content,
+  H1,
+  H2,
+  ImgBanner,
+} from "./style";
 
 const BannerWWA = () => {
   return (

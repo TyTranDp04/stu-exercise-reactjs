@@ -7,14 +7,14 @@ export const Container = styled.div`
 export const Banner = styled.div`
   height: 400px;
   margin-bottom: 50px;
-  position:relative;
+  position: relative;
 `;
 export const BackgroundColor = styled.div`
-opacity:0.4;
-`
+  opacity: 0.4;
+`;
 export const Content = styled.div`
-position:absolute;
-`
+  position: absolute;
+`;
 export const H1 = styled.h1`
   color: #ffffff;
   font-family: 'Roboto';
@@ -57,7 +57,7 @@ export const ImgBanner = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 0px;
-  margin-left:0px;
+  margin-left: 0px;
 `;
 
 export const Body = styled.div``;

@@ -10,11 +10,11 @@ export const Banner = styled.div`
   margin-bottom: 50px;
 `;
 export const BackgroundColor = styled.div`
-opacity:0.4;
-`
+  opacity: 0.4;
+`;
 export const Content = styled.div`
-position:absolute;
-`
+  position: absolute;
+`;
 export const H1 = styled.h1`
   color: #ffffff;
   font-family: Roboto;
@@ -45,5 +45,5 @@ export const ImgBanner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0px;
+  margin: 0px;
 `;
