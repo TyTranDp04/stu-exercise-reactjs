@@ -1,10 +1,9 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import {
-  faSquareFacebook,
-  faLinkedin,
+  faLinkedin, faSquareFacebook
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { getListDataPortfolio } from "../../../store/actions/Portfolio";
 import {
   StoriesDesciption,
@@ -21,19 +20,20 @@ import {
   StoriesSocialFb,
   StoriesSocialFbA,
   StoriesSocialLinked,
-  StoriesSocialLinkedA,
+  StoriesSocialLinkedA
 } from "../../TypicalSuccessfulStories/style";
 import {
   StoriesContainer,
   StoriesFluid,
   StoriesTitleH2,
   StoriesTitleH3,
-  StoriesTitleWrapper,
+  StoriesTitleWrapper
 } from "../../WhatWeDo/StSoftware/StoriesStSoftware/stye";
-import { PortButton, PortfolioBtn } from "./style";
+import { PortfolioBtn, PortLink } from "./style";
 
 const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
   const PortDow = "Download full stories";
+  const PortLinkUrl = 'https://storage.googleapis.com/stunited/STU%20SUCCESS%20STORIES.pdf';
   const stSoftwareStoriesData = useSelector(
     (state) => state.DataPortfolio.PortfolioState
   );
@@ -110,7 +110,7 @@ const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
             ))}
           </StoriesItemContainer>
           <PortfolioBtn>
-            <PortButton>{PortDow}</PortButton>
+            <PortLink target="true" href={PortLinkUrl}>{PortDow}</PortLink>
           </PortfolioBtn>
         </StoriesContainer>
       </StoriesFluid>
