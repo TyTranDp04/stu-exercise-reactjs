@@ -4,7 +4,12 @@ import imgBanner from "../../../assets/images/whoweare/join.jpg";
 export const Container = styled.div`
 padding:0px;
 `
-
+export const BackgroundColor = styled.div`
+opacity:0.4;
+`
+export const Content = styled.div`
+position:absolute;
+`
 export const Banner = styled.div`
   height: 400px;
   margin-bottom: 50px;

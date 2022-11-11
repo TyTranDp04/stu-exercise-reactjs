@@ -1,15 +1,16 @@
 import React from "react";
-import { Banner, Container, H1, H2, ImgBanner } from "./style";
+import { BackgroundColor, Banner, Container, Content, H1, H2, ImgBanner } from "./style";
 
 const BannerLetTask = () => {
   return (
     <Container className="Container-fluid">
       <Banner className="">
         <ImgBanner className="row">
-          <div>
+        <BackgroundColor className="bg-black w-100 h-100"></BackgroundColor>
+          <Content>
             <H1>Let's talk</H1>
             <H2>Stay in touch with us</H2>
-          </div>
+          </Content>
         </ImgBanner>
       </Banner>
     </Container>

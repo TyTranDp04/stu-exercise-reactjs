@@ -49,9 +49,9 @@ const MeetOurTeam = ({ title }) => {
           </Row>
         </ContainerBody>
       </Body>
-      <FooterBtn className="col-12 text-end p-5 mb-5">
+      <FooterBtn className="col-12 pt-5 text-end mb-5">
         <Link href="/">
-        <Btn>Wanna join us</Btn>
+        <Btn className="p-3">Wanna join us</Btn>
         </Link>
       </FooterBtn>
     </Container>
