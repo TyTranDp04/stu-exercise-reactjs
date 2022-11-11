@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getListJoinUs } from "../../../store/actions/joinus";
-<<<<<<< HEAD
 import Loading from "../../Loading";
-=======
->>>>>>> develop
 import {
   Body,
   Card,
