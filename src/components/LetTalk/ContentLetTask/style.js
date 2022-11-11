@@ -24,9 +24,7 @@ export const Header = styled.div`
 export const H1 = styled.h1`
   font-weight: 700;
 `;
-// export const Link = styled.a`
-//   text-decoration: none;
-// `;
+
 export const BodyForm = styled.div`
   box-shadow: 0 0 3px rgb(0 0 0 / 15%);
   margin-top: 50px;
