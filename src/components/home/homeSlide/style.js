@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
   padding: 0;
   .slick-slider{
     height: 100vh;
@@ -11,17 +12,30 @@ export const Container = styled.div`
       }
     }
   }
+  .slide__title::before{
+    content: '';
+    bottom: -300%;
+    width: 150vw;
+    height: 200vh;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.4);;
+  }
 .slick-slider .slick-dots{
   left: 0px;
   bottom: 20px;
   position: absolute;
   width: 100%;
+  z-index: 6;
 }
 .slick-dots li button:before{
   opacity: 0;
 }
 .slick-dots li{
   margin: 0 1px;
+}
+.slick-active button{
+  background-color: #fff;
 }
 .slick-slider .slick-dots li button{
   margin-bottom: 30px;
@@ -97,6 +111,7 @@ export const CardFooter = styled.div`
       opacity: 1;
   }
 } 
+  z-index: 6;
 
   animation: headerNotifyGrowth ease-in 0.5s;
   position: absolute;
@@ -107,11 +122,13 @@ export const CardFooter = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
+ 
   .slide__title{
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 6;
     
     p{
       margin: auto 50px auto 0;
@@ -124,6 +141,7 @@ export const CardFooter = styled.div`
       font-size: 1.5vw;
       border-radius: 5px;
       font-weight: 600;  
+       z-index: 6;
     }
   }
   @media (max-width: 1024px){
