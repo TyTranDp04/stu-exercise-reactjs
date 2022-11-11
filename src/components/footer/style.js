@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import imgFb from "../../assets/images/imgFace.png"
-import StFoterImg from "../../assets/images/STFooterImg.jpg"
-import StFoterLogo from "../../assets/images/STFooterLogo.jpg"
+import imgFb from "../../assets/images/imgFace.png";
+import StFoterImg from "../../assets/images/STFooterImg.jpg";
+import StFoterLogo from "../../assets/images/STFooterLogo.jpg";
 
 export const FooterConTainer = styled.div`
   background-color: #181818;
@@ -18,33 +18,30 @@ export const Container = styled.div`
   margin: auto;
   padding: 100px 0px 70px;
   height: auto;
-  @media screen and (max-width: 990px){
+  @media screen and (max-width: 990px) {
     flex-direction: column;
-   
   }
-  @media screen and (max-width: 1200px){
-    
+  @media screen and (max-width: 1200px) {
   }
 `;
 export const FooterTop = styled.div`
-width:33%;
-@media screen and (max-width: 990px){
-  width:100%;
-  margin-bottom:30px;
-}
+  width: 33%;
+  @media screen and (max-width: 990px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 `;
 export const FooterContent = styled.div`
   padding: 0 15px;
-  
 `;
 export const Menu = styled.h3`
   padding: 0px;
   font-size: 18px;
-  color:#ffffff;
-font-family:Roboto;
-font-size:18px;
-font-weight:500px;
-line-height:24px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 24px;
 `;
 export const MenuEvent = styled.div``;
 export const MenuContentTop = styled.div``;
@@ -84,71 +81,65 @@ export const ContactContent = styled.div``;
 
 export const FooterDesc = styled.div`
   padding: 0 15px;
-  width:33%;
-  @media screen and (max-width: 990px){
-    margin-bottom:30px;
-    width:100%
+  width: 33%;
+  @media screen and (max-width: 990px) {
+    margin-bottom: 30px;
+    width: 100%;
   }
 `;
 
 export const Row = styled.div`
   padding-right: 40px;
-  @media screen and (max-width: 990px){
-    
-    padding:0px;
+  @media screen and (max-width: 990px) {
+    padding: 0px;
   }
-  @media screen and (max-width: 1220px){
-    
-    padding:0px;
+  @media screen and (max-width: 1220px) {
+    padding: 0px;
   }
 `;
 
 export const ContentDesc = styled.div``;
 export const AddressUS = styled.div`
-
-&.AddressUSTop{
-    padding-left:0px;
-}
-padding-left : 10px;    
+  &.AddressUSTop {
+    padding-left: 0px;
+  }
+  padding-left: 10px;
   &.about:hover {
     color: #00aeef;
     cursor: pointer;
   }
 `;
 export const AddressUSTop = styled.div`
-padding : 0px;
+  padding: 0px;
 `;
 export const AddressUSRow = styled.div`
-display:flex;
-`
+  display: flex;
+`;
 export const RowST = styled.div`
   padding-left: 20px;
 `;
 
 export const FooterImg = styled.div`
-width:34%;
-padding: 0 15px;
-@media screen and (max-width: 991px){
+  width: 34%;
+  padding: 0 15px;
+  @media screen and (max-width: 991px) {
     width: 60%;
     height: 150px;
-  padding: 0 15px;
+    padding: 0 15px;
   }
-@media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     width: 100%;
     height: 150px;
-  padding: 0 15px;
-}
-  
-
+    padding: 0 15px;
+  }
 `;
 export const ImgST = styled.div`
-width: 90%;
-height: 90%;
-background-image: url(${StFoterImg});
->>>>>>> 6858025a23c9e9b6c8325679e5937f2839e25c01
-background-position: 40% 75%;
-background-repeat: no-repeat;
-@media screen and (max-width: 1200px){
+  width: 90%;
+  height: 90%;
+  background-image: url(${StFoterImg});
+  background-position: 40% 75%;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 1200px) {
     width: 100%;
     height: 100%;
   }
@@ -219,38 +210,36 @@ export const ImgDescFollowPage = styled.div`
     cursor: pointer;
   }
 `;
-export const ImgDescContact = styled.div`
-
-`;
+export const ImgDescContact = styled.div``;
 export const ImgTopFollower = styled.div``;
 export const ContainerDesc = styled.p`
   background-color: #000000;
   border-top: 1px solid #00243f;
   width: 100%;
   height: 80px;
-  color:#ffffff;
-  font-size:14px;
-  font-weight:300;
-  line-height:24px;
-  padding:30px 0px 25px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 30px 0px 25px;
   margin: 0;
 `;
 export const ImgDescContactImg = styled.div`
-display:flex;
-width: 100px;
-height: 28px;
-background-color: #f5f6f7;
-color: black;
-margin: 5px;
-font-size: 12px;
-font-weight: bold;
-border: 1px solid rgba(0, 0, 0, 0.12);
-padding-left: 7px;
-cursor: pointer;
-`
+  display: flex;
+  width: 100px;
+  height: 28px;
+  background-color: #f5f6f7;
+  color: black;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding-left: 7px;
+  cursor: pointer;
+`;
 export const ContainerDescContent = styled.div`
-padding : 0 20%;
-text-align:left;
+  padding: 0 20%;
+  text-align: left;
 `;
 
 export const ButtonOnToTop = styled.button`
@@ -279,7 +268,7 @@ display:none;
 export const MenuContent = styled.div`
   display: flex;
   color: white;
-  ${Row} > ${MenuTopContent} > a{
+  ${Row} > ${MenuTopContent} > a {
     text-decoration: none;
     color: white;
   }
@@ -287,7 +276,7 @@ export const MenuContent = styled.div`
     color: #00aeef;
   }
 
-  ${Row} > ${RowST} > ${MenuTopContent} > a{
+  ${Row} > ${RowST} > ${MenuTopContent} > a {
     text-decoration: none;
     color: white;
   }
