@@ -1,4 +1,4 @@
-import React, { useEffect,Component, useRef  } from 'react';
+import React, { useEffect } from 'react';
 import Slider from "react-slick";
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -62,7 +62,7 @@ const ClientsPartners = () => {
             data.map((e, index) => (
               <div key={index}>
                 <a href={e.link}>
-                  <img src={e.src}></img>
+                  <img src={e.src} alt='Partners'></img>
                 </a>
               </div>
             ))
