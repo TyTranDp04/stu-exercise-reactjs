@@ -5,6 +5,7 @@ import HomePage from '../views/home';
 import JoinUsPage from '../views/JoinUs';
 import LetTalkPage from '../views/LetTalk';
 import PorfolioPage from '../views/Porfolio';
+import StDigitalPage from "../views/WhatWeDoPage/StDigitalPage";
 import StSoftWarePage from '../views/WhatWeDoPage/StSoftwarePage';
 import WhoWeArePage from '../views/WhoWeAre';
 
@@ -18,6 +19,7 @@ const RouterApp = () => {
         <Route path="/join-us" element={<JoinUsPage />} />
         <Route path="/st-software" element={<StSoftWarePage />} />
         <Route path="/lets-talk" element={<LetTalkPage />} />
+        <Route path="/st-digital" element={<StDigitalPage />} />
       </Routes>
     </BrowserRouter>
   )
