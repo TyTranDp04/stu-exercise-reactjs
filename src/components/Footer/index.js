@@ -43,11 +43,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
 
 const openInNewTab = (url) => {
   window.open(url, "_blank");
@@ -68,7 +63,6 @@ const Footer = () => {
   const AddressDesc = "14 An Thuong 18 , Da Nang";
   const Call = "Call us +84 905 610 229";
   const Mail = "info@stsoftware.com";
-  // const Follow = "Followed";
   const FollowPage = "Follow page";
   const Contact = "CONTACT US";
   const Contactus = "Contact us";
@@ -77,15 +71,14 @@ const Footer = () => {
   const ContainerLast = "Copyright © 2019 by ST United.";
 
   const [followPageContent, setFollowPageContent] = useState(FollowPage);
-  // const [isShow, setIsshow] = useState(true)
+
   const updateFollowPageContent = () => {
     setFollowPageContent(
       FollowPage === followPageContent ? "Followed" : FollowPage
     );
   };
   useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <>
@@ -208,9 +201,8 @@ const Footer = () => {
       <ButtonOnToTop
         className="BtnTop"
         id="myBtn"
-        // onClick={() => topFunction()}
         onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }}
       >
         <FontAwesomeIcon icon={faAngleUp} />
