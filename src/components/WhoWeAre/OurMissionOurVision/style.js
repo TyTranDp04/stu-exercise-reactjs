@@ -18,6 +18,7 @@ export const TextContent = styled.p`
 `;
 export const Strong = styled.strong`
   font-weight: 700;
+  color: #000000;
 `;
 export const BodyWA = styled.div`
   @media (max-width: 897px) {

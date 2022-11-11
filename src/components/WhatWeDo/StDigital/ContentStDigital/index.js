@@ -31,7 +31,7 @@ const ContentStDigital = ({ stDigitalTitle, stDigitalDesc }) => {
               <CategoriesItem style={{ padding: '0' }}>
                 <BlockIcon style={{ minWidth: '92px' }}><StDigitalItemImg src={item.image} alt={item.title} /></BlockIcon>
                 <BlockContent>
-                  <BlockContentH3>{item.title}</BlockContentH3>
+                  <BlockContentH3 style={{color: '#000000'}}>{item.title}</BlockContentH3>
                   <BlockContentP>{item.desc}</BlockContentP>
                 </BlockContent>
               </CategoriesItem>

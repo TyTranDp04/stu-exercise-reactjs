@@ -69,6 +69,7 @@ export const Card = styled.div`
   background-color: #fff;
   height: 480px;
   box-shadow: 0 0 3px rgb(0 0 0 / 15%);
+  transition: all 0.3s ease;
   &:hover {
     box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
     -webkit-transform: scale(1.01);

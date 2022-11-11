@@ -134,7 +134,7 @@ const ContentLetTask = () => {
             </div>
           </Form>
           <Content className="col-lg-4 col-md-12 text-start">
-            <h4>Office</h4>
+            <h4 style={{fontWeight: 'bold'}}>Office</h4>
             <p>Address: Nomad Space, No.14 An Thuong 18, Danang, Vietnam</p>
             <p>Hotline: (+84) 777 463 183</p>
             <p>Email: hello(at)stunited.vn</p>

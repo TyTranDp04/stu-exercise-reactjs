@@ -5,7 +5,9 @@ export const Container = styled.div`
 export const Banner = styled.div``;
 export const Body = styled.div``;
 export const HeaderContent = styled.div``;
-export const Title = styled.h2``;
+export const Title = styled.h2`
+font-weight: bold;
+`;
 export const MainWrapper = styled.div`
   font-weight: 300;
   line-height: 24px;
@@ -75,6 +77,6 @@ export const Avatar = styled.img`
   height: 150px;
 `;
 export const H4 = styled.h4`
-  font-weight: 500;
+  font-weight: bold;
   line-height: 20px;
 `;

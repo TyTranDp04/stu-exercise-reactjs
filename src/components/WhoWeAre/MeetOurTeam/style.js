@@ -13,7 +13,7 @@ export const MainWrapper = styled.div`
   margin: 0px -15px;
 `;
 export const TextContent = styled.p`
-  font-weight: 300;
+  font-weight: bold;
   line-height: 24px;
   margin: 0px 0px 20px;
 `;
@@ -70,6 +70,11 @@ export const FooterCard = styled.div`
 `;
 export const Linka = styled.a`
   text-decoration: none;
+  color: #00AEEF;
+  font-weight: bold;
+  &:hover{
+    color: #00AEEF;
+  }
 `;
 
 export const Avatar = styled.img`
@@ -80,6 +85,7 @@ export const Avatar = styled.img`
 
 export const H1 = styled.h1`
   font-size: 27px;
+  font-weight: bold;
 `;
 
 export const FooterBtn = styled.div`

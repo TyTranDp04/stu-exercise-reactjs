@@ -1,10 +1,6 @@
 import styled from "styled-components"
 
 export const ContainerFluid = styled.div`
-* {
-  color: #7a7a7a;
-  font-family: 'Roboto', sans-serif;
-}
   padding-top: 40px;
   background-color: #7a7a7a17;
 
@@ -45,7 +41,7 @@ export const CategoriesItemWrapper = styled.div`
 export const CategoriesItem = styled.div`
   display: flex;
   padding: 0 10px;
-
+  color: #7a7a7a;
   @media (max-width: 1200px) {
     padding: 0;
   }
@@ -85,7 +81,7 @@ export const BlockContentClick = styled.a`
   line-height: 16px;
   cursor: pointer;
   text-decoration: none;
-
+  font-weight: bold;
   &:hover {
     color: rgba(0,174,239,0.75);
   }
