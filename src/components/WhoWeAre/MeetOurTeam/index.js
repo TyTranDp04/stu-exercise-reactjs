@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { getListDataTeam } from "../../../store/actions/WhoWeAre";
 import {
   Avatar,
   Body,
-  Btn,
   Card,
   Container,
   ContainerBody,
@@ -13,12 +13,14 @@ import {
   FooterCard,
   H1,
   HeaderCard,
-  Link,
+  Linka,
+  PortLink,
   Row,
   TextContent,
 } from "./style";
 
 const MeetOurTeam = ({ title }) => {
+  const titleLink = "Wanna join us?";
   const dataTeam = useSelector((state) => state.dataTeam.dataTeamState);
   const dispatch = useDispatch();
   const data = dataTeam.data;
@@ -38,9 +40,9 @@ const MeetOurTeam = ({ title }) => {
                     <Avatar src={item.avatar}></Avatar>
                   </HeaderCard>
                   <FooterCard>
-                    <Link>
+                    <Linka>
                       {item.name}
-                    </Link>
+                    </Linka>
                     <TextContent>{item.position}</TextContent>
                   </FooterCard>
                 </Card>
@@ -50,9 +52,7 @@ const MeetOurTeam = ({ title }) => {
         </ContainerBody>
       </Body>
       <FooterBtn className="col-12 pt-5 text-end mb-5">
-        <Link href="/">
-          <Btn className="p-3">Wanna join us</Btn>
-        </Link>
+        <PortLink><Link to="/" >{titleLink}</Link></PortLink>
       </FooterBtn>
     </Container>
   );
