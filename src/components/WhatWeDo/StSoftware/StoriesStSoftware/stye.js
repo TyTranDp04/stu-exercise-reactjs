@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StoriesFluid = styled.div`
-  background-color: #7a7a7a17;
+  // background-color: #7a7a7a17;
   padding-bottom: 150px;
 `
 export const StoriesContainer = styled.div`

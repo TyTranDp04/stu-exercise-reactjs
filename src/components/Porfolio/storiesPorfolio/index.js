@@ -30,7 +30,8 @@ import {
   StoriesTitleWrapper
 } from "../../WhatWeDo/StSoftware/StoriesStSoftware/stye";
 import { PortfolioBtn, PortLink } from "./style";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Loading from "../../Loading";
 
 const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
   const PortDow = "Download full stories";
@@ -40,19 +41,19 @@ const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
   const dispatch = useDispatch();
 
   const data = stSoftwareStoriesData.data;
-
+  const loading = stSoftwareStoriesData.loading;
   useEffect(() => {
     dispatch(getListDataPortfolio());
   }, [dispatch]);
   return (
     <>
-      <StoriesFluid className="container-fluid" style={{paddingBottom: '0'}}>
+      <StoriesFluid className="container-fluid" style={{ paddingBottom: '0' }}>
         <StoriesContainer className="container">
           <StoriesTitleWrapper className="row">
-            <StoriesTitleH2 style={{fontWeight :"bold", color:"black"}}>{storiesTitle}</StoriesTitleH2>
-            <StoriesTitleH3 style={{ color:"black"}}>{storiesDesc}</StoriesTitleH3>
+            <StoriesTitleH2 style={{ fontWeight: "bold", color: "black" }}>{storiesTitle}</StoriesTitleH2>
+            <StoriesTitleH3 style={{ color: "black" }}>{storiesDesc}</StoriesTitleH3>
           </StoriesTitleWrapper>
-          <StoriesItemContainer className="row">
+          {loading ? <Loading /> : <StoriesItemContainer className="row">
             {data?.map((item) => (
               <StoriesItemWrapper key={item.id} className="col-sm-12 col-md-3">
                 <StoriesItem>
@@ -108,7 +109,7 @@ const PortfolioStories = ({ storiesTitle, storiesDesc }) => {
                 </StoriesItem>
               </StoriesItemWrapper>
             ))}
-          </StoriesItemContainer>
+          </StoriesItemContainer>}
           <PortfolioBtn>
             <PortLink><Link to="/" >{PortDow}</Link></PortLink>
           </PortfolioBtn>

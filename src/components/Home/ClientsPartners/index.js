@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
 import Slider from "react-slick";
-
 import { useDispatch, useSelector } from 'react-redux';
-import { getListDataPartners } from '../../../store/actions/Home';
+import { getListDataPartners } from '../../../store/actions/home';
 import PartnersStyled from './style';
 
 const ClientsPartners = () => {
-
   const dataPartners = useSelector(state => state.listDataPartners.listDataPartnersState)
+  const dataHomeSlide = useSelector(state => state.dataHomeSlide.dataHomeSlideState)
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getListDataPartners())
   }, [dispatch])
-  const data = dataPartners.data
+  const data = dataPartners.data;
+  const loading = dataHomeSlide.loading;
   var settings = {
     dots: true,
     infinite: false,
@@ -21,7 +21,7 @@ const ClientsPartners = () => {
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
-      
+
       {
         breakpoint: 1024,
         settings: {
@@ -50,27 +50,28 @@ const ClientsPartners = () => {
   };
 
   return (
-
-    <PartnersStyled className='container-fluid'>
-      <div className='silde__container'>
-        <div className='slide__title'>
-          <h2> Trusted by the Clients & Partners </h2>
+    <>
+      {!loading && <PartnersStyled className='container-fluid'>
+        <div className='silde__container'>
+          <div className='slide__title'>
+            <h2> Trusted by the Clients & Partners </h2>
+          </div>
+          <div className='slide__items'>
+            <Slider  {...settings}>
+              {
+                data?.map((e, index) => (
+                  <div key={index}>
+                    <a href={e.link}>
+                      <img src={e.src} alt='Partners'></img>
+                    </a>
+                  </div>
+                ))
+              }
+            </Slider>
+          </div>
         </div>
-        <div className='slide__items '>
-        <Slider  {...settings}>
-          {
-            data.map((e, index) => (
-              <div key={index}>
-                <a href={e.link}>
-                  <img src={e.src} alt='Partners'></img>
-                </a>
-              </div>
-            ))
-          }
-        </Slider>
-        </div>
-      </div>
-    </PartnersStyled>
+      </PartnersStyled>}
+    </>
   )
 }
 

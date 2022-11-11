@@ -45,7 +45,7 @@ export const BannerTitle = styled.h1`
   line-height: 43px;
   font-weight: 700;
   margin: 0 0 10px;
-
+  color: #fff;
   @media (max-width: 991.5px) {
     font-size: 30px;
   }
@@ -58,6 +58,7 @@ export const BannerDesc = styled.h2`
   line-height: 24px;
   font-weight: 700;
   margin: 0 0 20px;
+  color: #fff;
   @media (max-width: 767.5px) {
     font-size: 16px;
   }

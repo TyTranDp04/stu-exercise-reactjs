@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const StDigitalContainerFluid = styled.div`
   background-color: #7a7a7a17;
-
 @media (max-width: 767.5px) {
   padding-top: 0;
 }

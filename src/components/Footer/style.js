@@ -34,13 +34,13 @@ export const FooterTop = styled.div`
 export const FooterContent = styled.div`
   padding: 0 15px;
 `;
-export const Menu = styled.h3`
+export const MenuFooter = styled.h3`
   padding: 0px;
   font-size: 18px;
   color: #ffffff;
   font-family: Roboto;
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: bold;
   line-height: 24px;
 `;
 export const MenuEvent = styled.div``;
@@ -212,7 +212,7 @@ export const ImgDescFollowPage = styled.div`
 `;
 export const ImgDescContact = styled.div``;
 export const ImgTopFollower = styled.div``;
-export const ContainerDesc = styled.p`
+export const ContainerDesc = styled.div`
   background-color: #000000;
   border-top: 1px solid #00243f;
   width: 100%;

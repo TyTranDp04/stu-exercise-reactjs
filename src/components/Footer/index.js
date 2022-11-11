@@ -3,6 +3,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {
   FooterConTainer,
@@ -31,6 +32,7 @@ import {
   AddressUSRow,
   ButtonOnToTop,
   ImgDescContactImg,
+  MenuFooter,
 } from "./style";
 
 window.onscroll = () => scrollFunction();
@@ -49,7 +51,8 @@ const openInNewTab = (url) => {
 };
 
 const Footer = () => {
-  const Menu = "MENU";
+  const dataHomeSlide = useSelector(state => state.dataHomeSlide.dataHomeSlideState);
+  const loading = dataHomeSlide.loading;
   const Home = "HOME";
   const WhatWeDo = "WHAT WE DO";
   const SoftWare = "ST SOFTWARE";
@@ -80,129 +83,132 @@ const Footer = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
   return (
     <>
-      <FooterConTainer className="container-fluid">
-        <Container className="container">
-          <FooterTop>
-            <FooterContent>
-              <Menu style={{ padding: "0px" }}>{Menu}</Menu>
-              <MenuContent>
-                <Row>
-                  <MenuTopContent className="about">
-                    <Link to="/">{Home}</Link>
-                  </MenuTopContent>
-                  <MenuTopContent className="about">
-                    <Link to="/st-software/">{WhatWeDo}</Link>
-                  </MenuTopContent>
-                  <RowST>
+      {!loading && <>
+        <FooterConTainer className="container-fluid">
+          <Container className="container">
+            <FooterTop>
+              <FooterContent>
+                <MenuFooter style={{ padding: "0px" }}>MENU</MenuFooter>
+                <MenuContent>
+                  <Row>
                     <MenuTopContent className="about">
-                      <Link to="/st-software/">{SoftWare}</Link>
+                      <Link to="/">{Home}</Link>
                     </MenuTopContent>
                     <MenuTopContent className="about">
-                      <Link to="/st-digital/">{Digital}</Link>
+                      <Link to="/st-software/">{WhatWeDo}</Link>
+                    </MenuTopContent>
+                    <RowST>
+                      <MenuTopContent className="about">
+                        <Link to="/st-software/">{SoftWare}</Link>
+                      </MenuTopContent>
+                      <MenuTopContent className="about">
+                        <Link to="/st-digital/">{Digital}</Link>
+                      </MenuTopContent>
+                      <MenuTopContent className="about">
+                        <Link to="/st-incubation/">{Incubation}</Link>
+                      </MenuTopContent>
+                    </RowST>
+                  </Row>
+                  <Row>
+                    <MenuTopContent className="about">
+                      <Link to="/who-we-are/">{WhoWeAre}</Link>
                     </MenuTopContent>
                     <MenuTopContent className="about">
-                      <Link to="/st-incubation/">{Incubation}</Link>
+                      <Link to="/portfolio/">{Portfolio}</Link>
                     </MenuTopContent>
-                  </RowST>
-                </Row>
-                <Row>
-                  <MenuTopContent className="about">
-                    <Link to="/who-we-are/">{WhoWeAre}</Link>
-                  </MenuTopContent>
-                  <MenuTopContent className="about">
-                    <Link to="/portfolio/">{Portfolio}</Link>
-                  </MenuTopContent>
-                  <MenuTopContent className="about">
-                    <Link to="/join-us/">{Join}</Link>
-                  </MenuTopContent>
-                  <MenuTopContent className="about">
-                    <Link to="/lets-talk/">{Let}</Link>
-                  </MenuTopContent>
-                </Row>
-              </MenuContent>
-            </FooterContent>
-          </FooterTop>
-          <FooterDesc>
-            <Menu style={{ padding: "0px" }}>{Contact}</Menu>
-            <Row>
-              <AddressUSTop>{Address}</AddressUSTop>
-              <AddressUSRow>
-                <FontAwesomeIcon icon={faLocationArrow} />
-                <AddressUS>{AddressDesc}</AddressUS>
-              </AddressUSRow>
-              <AddressUSRow>
-                <FontAwesomeIcon icon={faPhone} />
-                <AddressUS>{Call}</AddressUS>
-              </AddressUSRow>
-              <AddressUSRow>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <AddressUS
-                  className="about"
-                  onClick={() => openInNewTab("mailto:hello@stunited.vn")}
-                >
-                  {Mail}
-                </AddressUS>
-              </AddressUSRow>
-            </Row>
-          </FooterDesc>
-          <FooterImg>
-            <ImgST>
-              <ImgTop>
-                <ImgTopLogo
-                  onClick={() =>
-                    openInNewTab("https://www.facebook.com/stunited.vn/")
-                  }
-                ></ImgTopLogo>
-                <ImgTopFollower>
-                  <ImgTopName
+                    <MenuTopContent className="about">
+                      <Link to="/join-us/">{Join}</Link>
+                    </MenuTopContent>
+                    <MenuTopContent className="about">
+                      <Link to="/lets-talk/">{Let}</Link>
+                    </MenuTopContent>
+                  </Row>
+                </MenuContent>
+              </FooterContent>
+            </FooterTop>
+            <FooterDesc>
+              <MenuFooter style={{ padding: "0px" }}>{Contact}</MenuFooter>
+              <Row>
+                <AddressUSTop>{Address}</AddressUSTop>
+                <AddressUSRow>
+                  <FontAwesomeIcon icon={faLocationArrow} />
+                  <AddressUS>{AddressDesc}</AddressUS>
+                </AddressUSRow>
+                <AddressUSRow>
+                  <FontAwesomeIcon icon={faPhone} />
+                  <AddressUS>{Call}</AddressUS>
+                </AddressUSRow>
+                <AddressUSRow>
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  <AddressUS
+                    className="about"
+                    onClick={() => openInNewTab("mailto:hello@stunited.vn")}
+                  >
+                    {Mail}
+                  </AddressUS>
+                </AddressUSRow>
+              </Row>
+            </FooterDesc>
+            <FooterImg>
+              <ImgST>
+                <ImgTop>
+                  <ImgTopLogo
                     onClick={() =>
                       openInNewTab("https://www.facebook.com/stunited.vn/")
                     }
-                  >
-                    {Content}
-                  </ImgTopName>
-                  <ImgTopFollow>{Follower}</ImgTopFollow>
-                </ImgTopFollower>
-              </ImgTop>
-              <ImgDesc>
-                <ImgDescFollowPage onClick={updateFollowPageContent}>
-                  {followPageContent}
-                </ImgDescFollowPage>
-                <ImgDescContactImg>
-                  <FontAwesomeIcon
-                    style={{
-                      paddingTop: "6px",
-                      paddingRight: "3px",
-                    }}
-                    icon={faEnvelope}
-                  />
-                  <ImgDescContact>
-                    <Link
-                      to="/"
-                      style={{
-                        textDecoration: "none",
-                        color: "black",
-                      }}
+                  ></ImgTopLogo>
+                  <ImgTopFollower>
+                    <ImgTopName
+                      onClick={() =>
+                        openInNewTab("https://www.facebook.com/stunited.vn/")
+                      }
                     >
-                      {Contactus}
-                    </Link>
-                  </ImgDescContact>
-                </ImgDescContactImg>
-              </ImgDesc>
-            </ImgST>
-          </FooterImg>
-        </Container>
-        <ContainerDesc>
-          <ContainerDescContent>{ContainerLast}</ContainerDescContent>
-        </ContainerDesc>
-      </FooterConTainer>
+                      {Content}
+                    </ImgTopName>
+                    <ImgTopFollow>{Follower}</ImgTopFollow>
+                  </ImgTopFollower>
+                </ImgTop>
+                <ImgDesc>
+                  <ImgDescFollowPage onClick={updateFollowPageContent}>
+                    {followPageContent}
+                  </ImgDescFollowPage>
+                  <ImgDescContactImg>
+                    <FontAwesomeIcon
+                      style={{
+                        paddingTop: "6px",
+                        paddingRight: "3px",
+                      }}
+                      icon={faEnvelope}
+                    />
+                    <ImgDescContact>
+                      <Link
+                        to="/"
+                        style={{
+                          textDecoration: "none",
+                          color: "black",
+                        }}
+                      >
+                        {Contactus}
+                      </Link>
+                    </ImgDescContact>
+                  </ImgDescContactImg>
+                </ImgDesc>
+              </ImgST>
+            </FooterImg>
+          </Container>
+          <ContainerDesc>
+            <ContainerDescContent>{ContainerLast}</ContainerDescContent>
+          </ContainerDesc>
+        </FooterConTainer>
+      </>}
       <ButtonOnToTop
         className="BtnTop"
         id="myBtn"
         onClick={() => {
-          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         }}
       >
         <FontAwesomeIcon icon={faAngleUp} />

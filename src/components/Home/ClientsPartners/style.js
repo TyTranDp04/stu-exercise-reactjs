@@ -13,6 +13,10 @@ const PartnersStyled = styled.div`
       }
     }
   .silde__container{
+    @media (min-width: 1400px){
+      max-width: 1180px;
+      margin: auto;
+    }
     .slide__title{
       height: 65px;
       display: flex;
@@ -23,7 +27,7 @@ const PartnersStyled = styled.div`
         font-size: 24px;
         line-height: 32px;
         font-family: Roboto;
-         font-weight: 500;
+        font-weight: bold;
         text-transform: inherit;
         text-align: inherit;
       }
@@ -81,7 +85,7 @@ const PartnersStyled = styled.div`
   }
   .slick-prev{
     position: absolute;
-    left: 92.5%;
+    left: 92%;
   }
   .slick-next{
     position: absolute;
