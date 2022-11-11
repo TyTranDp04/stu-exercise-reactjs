@@ -4,7 +4,7 @@ import LayoutFull from '../../layout/layoutFull'
 
 const JoinUsPage = () => {
   return (
-    <LayoutFull>
+    <LayoutFull title="Join us &#8211; ST United">
       <JoinUs />
     </LayoutFull>
   )

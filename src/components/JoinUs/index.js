@@ -1,13 +1,14 @@
 import React from 'react'
-import BannerJoinUs from './bannerJoinUs'
-import ContentJoinUs from './contentJoinUs'
+import BannerJoinUs from './BannerJoinUs'
+import ContentJoinUs from './ContentJoinUs'
+import { Container } from './ContentJoinUs/style'
 
 const JoinUs = () => {
   return (
-    <>
-    <BannerJoinUs/>
-    <ContentJoinUs/>
-    </>
+    <Container style={{backgroundColor: '#7a7a7a17', padding: '0'}}>
+      <BannerJoinUs />
+      <ContentJoinUs />
+    </Container>
   )
 }
 
