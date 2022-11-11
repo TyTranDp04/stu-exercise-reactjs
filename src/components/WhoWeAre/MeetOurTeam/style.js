@@ -68,9 +68,10 @@ export const HeaderCard = styled.div``;
 export const FooterCard = styled.div`
   padding: 20px 0px;
 `;
-export const Link = styled.a`
+export const Linka = styled.a`
   text-decoration: none;
 `;
+
 export const Avatar = styled.img`
   border-radius: 50%;
   width: 150px;
@@ -97,4 +98,25 @@ export const Btn = styled.button`
   font-weight: 300;
   padding: 14px 20px;
   text-align: center;
+`;
+
+export const PortLink = styled.button`
+  text-decoration: none;
+  color: #fff;
+  border-color: #f7be68;
+  background-color: #f7be68;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: none;
+  &:hover {
+    color: #fff;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
 `;
