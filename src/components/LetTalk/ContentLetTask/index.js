@@ -11,7 +11,6 @@ import {
   HeaderForm,
   Input,
   Label,
-  Link,
   Row,
   Submit,
   Text,
@@ -19,6 +18,7 @@ import {
 } from "./style";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 const ContentLetTask = () => {
   const {
     register,
