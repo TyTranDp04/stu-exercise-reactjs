@@ -32,7 +32,7 @@ const ContentLetTask = () => {
         <Header className="col-12 text-start">
           <div>
             <Text>
-              <Link href="/">Home</Link> &#62; let's talk
+              <Link to="/">Home</Link> &#62; let's talk
             </Text>
           </div>
           <H1>Let't talk</H1>
