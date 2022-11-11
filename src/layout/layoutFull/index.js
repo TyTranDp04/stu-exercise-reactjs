@@ -2,10 +2,10 @@ import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import logo from '../../assets/images/stlogo.png'
-import Header from '../../../src/components/header/index'
-import Footer from '../../../src/components/footer/index'
+import Header from '../../components/Header/index'
+import Footer from '../../components/Footer/index'
 
-const LayoutFull = ({ children, title = "" }) => {
+const LayoutFull = ({ children, title }) => {
 
   return (<>
     <HelmetProvider>
@@ -16,7 +16,7 @@ const LayoutFull = ({ children, title = "" }) => {
     </HelmetProvider>
 
     <Header/>
-    <Container fluid className='content'>
+    <Container fluid className='content' style={{'padding': '0'}}>
       {children}
     </Container>
     <Footer/>
