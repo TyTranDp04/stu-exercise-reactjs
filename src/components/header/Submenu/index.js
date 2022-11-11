@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const  Submenu = (props) => {
   const option = props.value
   const show = props.value.status
@@ -8,7 +9,7 @@ const  Submenu = (props) => {
         { 
           option.option.map((e, index)=>(
           <li key={index} className=" nav__link-option">
-            <a className='nav__link-option--href' href={e.link}>{e.title}</a>
+            <Link className='nav__link-option--href' to={e.link}>{e.title}</Link>
           </li>
           ))
         }      

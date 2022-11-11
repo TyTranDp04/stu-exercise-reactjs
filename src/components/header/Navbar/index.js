@@ -3,7 +3,8 @@ import Navigation from '../Navigation';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const NavBar = () =>{
+const NavBar = (props) =>{
+    const link = props.link
   const [showSubmenu, setShowSubmenu] = useState(false) 
      
     return (
@@ -13,10 +14,10 @@ const NavBar = () =>{
                         <Navigation value="HOME" handle = {{showSubmenu, setShowSubmenu}} link="/"/>
                         <Navigation value="WHAT WE DO" 
                         listoption = {[
-                            {title:"ST SOFTWARE", link:""},
-                            {title:"ST DIGITAL", link:""},
-                            {title:"ST INCUBATION", link:""}
-                        ]} handle = {{showSubmenu, setShowSubmenu}} link="/what-we-do"/>
+                            {title:"ST SOFTWARE", link:"/st-software"},
+                            {title:"ST DIGITAL", link:"/st-digital"},
+                            {title:"ST INCUBATION", link:"/st-incubation"}
+                        ]} handle = {{showSubmenu, setShowSubmenu}} link={link}/>
                         <Navigation value="WHO WE ARE" handle = {{showSubmenu, setShowSubmenu}} link="/who-we-are"/>
                         <Navigation value="PORTFOLIO" handle = {{showSubmenu, setShowSubmenu}} link="/portfolio"/>
                         <Navigation value="JOIN US" handle = {{showSubmenu, setShowSubmenu}} link="/join-us"/>
