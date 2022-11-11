@@ -1,21 +1,50 @@
 import styled from "styled-components";
+import banner from '../../../assets/images/wedevelop.jpg'
 
-export const Container = styled.div``;
-
-export const Body = styled.div``;
-
-export const Wrapper = styled.div``;
-
-export const H3 = styled.h3`
-  font-size: 20px;
-  line-height: 28px;
-  font-family: Roboto;
-  font-weight: 700;
-  text-transform: inherit;
-  text-align: inherit;
+export const Container = styled.div`
+  background-image: url(${banner});
+  background-size: cover;
+  z-index: 0;
 `;
 
-export const Content = styled.div``;
+export const Body = styled.div`
+  padding-top: 35px;
+  @media (min-width: 1400px) {
+    max-width: 1180px;
+  }
+  @media (max-width: 767.5px) {
+    max-width: 450px;
+  }
+`;
+
+export const Wrapper = styled.div`
+  padding-top: 55px;
+`;
+
+export const H3 = styled.h3`
+  z-index: 1000;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+`;
+export const H3Title = styled.h3`
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  font-weight: bold;
+`
+export const H4 = styled.h4`
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+`
+export const Content = styled.div`
+  padding: 40px 0 55px;
+`;
 
 export const Card = styled.div`
   padding: 0 30px 30px;
@@ -23,15 +52,18 @@ export const Card = styled.div`
   background-color: #fff;
   height: 100%;
   box-shadow: 0 0 3px rgb(0 0 0 / 15%);
+  transition: all 0.2s ease;
   &:hover {
     box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
-    -webkit-transform: scale(1.01);
     transform: scale(1.01);
-    -webkit-transform: translate(0, -10px);
     transform: translate(0, -10px);
   }
 `;
-
+export const CardInner = styled.div`
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+`
 export const CardHeader = styled.div`
   font-size: 60px;
   min-width: 80px;

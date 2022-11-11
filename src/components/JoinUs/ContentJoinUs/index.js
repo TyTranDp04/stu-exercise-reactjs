@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getListJoinUs } from "../../../store/actions/joinus";
+import { getListJoinUs } from "../../../store/actions/Joinus";
 import {
   Body,
   Card,
@@ -31,7 +31,7 @@ const ContentJoinUs = () => {
             enjoyable.
           </H3>
         </Wrapper>
-        <Content className="row mt-5">
+        <Content className="row mt-5 mb-5">
           {data?.map((text) => (
             <Card className="col-lg-3 col-md-6 col-sm-12 bg-white" key={text.id}>
               <CardHeader key={text.id}>

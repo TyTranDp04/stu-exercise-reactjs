@@ -3,7 +3,8 @@ import Navigation from '../Navigation';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const NavBar = () =>{
+const NavBar = (props) =>{
+    const link = props.link
   const [showSubmenu, setShowSubmenu] = useState(false) 
      
     return (

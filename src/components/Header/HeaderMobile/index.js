@@ -3,6 +3,8 @@ import NavBar from '../Navbar';
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import logo from '../../../assets/images/stlogo.png';
+import { Link } from 'react-router-dom';
+
 const HeaderSection =() =>{
   const [showNavBar, setShowNavBar] = useState(false)
   return (
@@ -21,9 +23,9 @@ const HeaderSection =() =>{
           }
         </Col>
         <Col xs={6} className="header__logo">
-          <a href="index.html">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </Col>
       </Row>
     </Container>
