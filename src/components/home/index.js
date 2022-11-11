@@ -1,6 +1,6 @@
 import React from 'react'
 import ClientsPartners from './ClientsPartners'
-import HomeSlide from './homeSlide'
+import HomeSlide from '../home/HomeSlide/index'
 import TypicalSuccessful from './TypicalSuccessful'
 import WeDevelop from './WeDevelop'
 
