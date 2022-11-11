@@ -12,7 +12,7 @@ export const PortLink = styled.button`
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
-  
+  border: none;
   &:hover {
     color: #fff;
   }
