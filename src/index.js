@@ -5,6 +5,8 @@ import App from './App';
 import './assets/fonts/Nunito/Nunito-VariableFont_wght.ttf';
 import './assets/fonts/Rubik/Rubik-VariableFont_wght.ttf';
 import './index.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './store';
