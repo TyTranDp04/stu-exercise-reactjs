@@ -2,8 +2,8 @@ import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import logo from '../../assets/images/stlogo.png'
-import Header from '../../../src/components/header/index'
-import Footer from '../../../src/components/footer/index'
+import Header from '../../components/eader/index'
+import Footer from '../../components/ooter/index'
 
 const LayoutFull = ({ children, title }) => {
 
