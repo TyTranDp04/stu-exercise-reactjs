@@ -61,7 +61,9 @@ const ClientsPartners = () => {
           {
             data.map((e, index) => (
               <div key={index}>
-                <img src={e.src}></img>
+                <a href={e.link}>
+                  <img src={e.src}></img>
+                </a>
               </div>
             ))
           }
