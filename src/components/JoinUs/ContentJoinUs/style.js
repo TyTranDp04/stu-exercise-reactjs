@@ -36,9 +36,9 @@ export const CardHeader = styled.div`
   font-size: 60px;
   min-width: 80px;
   padding: 80px 0 70px;
-@media  (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 40px 0 50px;
-}
+  }
 `;
 
 export const CardFooter = styled.div``;

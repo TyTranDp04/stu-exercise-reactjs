@@ -31,7 +31,7 @@ const ContentJoinUs = () => {
             enjoyable.
           </H3>
         </Wrapper>
-        <Content className="row mt-5">
+        <Content className="row mt-5 mb-5">
           {data?.map((text) => (
             <Card className="col-lg-3 col-md-6 col-sm-12 bg-white">
               <CardHeader key={text.id}>

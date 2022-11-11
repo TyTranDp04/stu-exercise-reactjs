@@ -2,7 +2,7 @@ import { faAngleUp, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   FooterConTainer,
@@ -43,10 +43,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+
 const openInNewTab = (url) => {
   window.open(url, "_blank");
 };
@@ -66,7 +63,6 @@ const Footer = () => {
   const AddressDesc = "14 An Thuong 18 , Da Nang";
   const Call = "Call us +84 905 610 229";
   const Mail = "info@stsoftware.com";
-  // const Follow = "Followed";
   const FollowPage = "Follow page";
   const Contact = "CONTACT US";
   const Contactus = "Contact us";
@@ -75,12 +71,15 @@ const Footer = () => {
   const ContainerLast = "Copyright © 2019 by ST United.";
 
   const [followPageContent, setFollowPageContent] = useState(FollowPage);
-  // const [isShow, setIsshow] = useState(true)
+
   const updateFollowPageContent = () => {
     setFollowPageContent(
       FollowPage === followPageContent ? "Followed" : FollowPage
     );
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <FooterConTainer className="container-fluid">
@@ -202,7 +201,9 @@ const Footer = () => {
       <ButtonOnToTop
         className="BtnTop"
         id="myBtn"
-        onClick={() => topFunction()}
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
       >
         <FontAwesomeIcon icon={faAngleUp} />
       </ButtonOnToTop>

@@ -6,7 +6,7 @@ import { getListDataPartners } from '../../../store/actions/home';
 import PartnersStyled from './style';
 
 const ClientsPartners = () => {
- 
+
   const dataPartners = useSelector(state => state.listDataPartners.listDataPartnersState)
   const dispatch = useDispatch()
   useEffect(() => {

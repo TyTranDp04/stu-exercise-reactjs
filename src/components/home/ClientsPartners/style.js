@@ -5,6 +5,13 @@ const PartnersStyled = styled.div`
     padding-top: 90px;
     padding-bottom: 35px;
     height: 434px;
+    .slick-slider {
+      .slick-arrow {
+        &:before {
+
+        }
+      }
+    }
   .silde__container{
     .slide__title{
       height: 65px;
@@ -22,12 +29,20 @@ const PartnersStyled = styled.div`
       }
     }
     .slide__items{
-      
+      .slick-slider {
+        .slick-arrow:focus {
+          background-color: #93D9F3;
+        }
+        // .slick-arrow:focus .slick-arrow:before {
+        //   color: #fff;
+        //   // background-color: #93D9F3;
+        // }
+      }
+
     }
   }
   .slick-arrow{
     top: -30px;
-    background-color: red;
     right: 30px;
     width: 46px;
     height: 20px;
@@ -54,6 +69,9 @@ const PartnersStyled = styled.div`
         }
         .slick-slick-cloned{
       }
+    }
+    .slick-prev::focus{
+      background-color: red;
     }
   }
   
