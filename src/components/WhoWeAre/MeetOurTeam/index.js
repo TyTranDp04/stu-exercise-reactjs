@@ -38,7 +38,7 @@ const MeetOurTeam = ({ title }) => {
                     <Avatar src={item.avatar}></Avatar>
                   </HeaderCard>
                   <FooterCard>
-                    <Link href={item.Link} target="_blank">
+                    <Link>
                       {item.name}
                     </Link>
                     <TextContent>{item.position}</TextContent>

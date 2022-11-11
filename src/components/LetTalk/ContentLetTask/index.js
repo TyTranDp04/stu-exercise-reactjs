@@ -19,7 +19,6 @@ import {
 } from "./style";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 const ContentLetTask = () => {
   const {
     register,
@@ -27,7 +26,6 @@ const ContentLetTask = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const MySwal = withReactContent(Swal);
   return (
     <Container className="container-fluid bg-white">
       <Row className="container">
