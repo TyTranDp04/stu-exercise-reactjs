@@ -1,4 +1,4 @@
-import StSoftWare from "../../../components/WhatWeDo/StSoftware"
+import StSoftWare from "../../../components/whatWeDo/stSoftware"
 import LayoutFull from "../../../layout/layoutFull"
 
 const StSoftWarePage = () => {

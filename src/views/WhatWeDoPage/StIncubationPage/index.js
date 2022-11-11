@@ -1,5 +1,5 @@
 import React from 'react'
-import StIncubation from '../../../components/WhatWeDo/StIncubation'
+import StIncubation from '../../../components/whatWeDo/StIncubation'
 import LayoutFull from '../../../layout/layoutFull'
 
 const StIncubationPage = () => {

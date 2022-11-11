@@ -1,6 +1,6 @@
 import React from 'react'
 import banner from '../../../../assets/images/st-incubation.jpg'
-import { BannerCaption, BannerContainer, BannerDesc, BannerInner, BannerInnerBg, BannerTitle, BannerWrapper } from '../../StSoftware/BannerStSoftware/style'
+import { BannerCaption, BannerContainer, BannerDesc, BannerInner, BannerInnerBg, BannerTitle, BannerWrapper } from '../../stSoftware/BannerStSoftware/style'
 
 const BannerStIncubation = ({bannerTitle,bannerDesc}) => {
   return (

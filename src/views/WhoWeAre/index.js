@@ -1,5 +1,5 @@
 import React from 'react'
-import WhoWeAre from '../../components/WhoWeAre'
+import WhoWeAre from '../../components/whoWeAre'
 import LayoutFull from '../../layout/layoutFull'
 
 const WhoWeArePage = () => {

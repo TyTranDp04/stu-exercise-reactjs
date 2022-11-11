@@ -1,5 +1,5 @@
 import banner from '../../../../assets/images/bannerstdigital.jpg'
-import { BannerCaption, BannerContainer, BannerDesc, BannerInner, BannerInnerBg, BannerTitle, BannerWrapper } from '../../StSoftware/BannerStSoftware/style'
+import { BannerCaption, BannerContainer, BannerDesc, BannerInner, BannerInnerBg, BannerTitle, BannerWrapper } from '../../stSoftware/BannerStSoftware/style'
 
 const BannerStDigital = ({ bannerDigitalDesc, stDigitalTitle }) => {
   return (

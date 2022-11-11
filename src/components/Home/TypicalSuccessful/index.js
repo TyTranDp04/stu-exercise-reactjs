@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import TypicalSuccessfulStories from '../../TypicalSuccessfulStories';
-import { StoriesContainer, StoriesFluid, StoriesTitleH2, StoriesTitleH3, StoriesTitleWrapper } from '../../WhatWeDo/StSoftware/StoriesStSoftware/stye';
+import { StoriesContainer, StoriesFluid, StoriesTitleH2, StoriesTitleH3, StoriesTitleWrapper } from '../../whatWeDo/stSoftware/StoriesStSoftware/stye';
 
 const TypicalSuccessful = ({ storiesTitle, storiesDesc }) => {
   const dataHomeSlide = useSelector(state => state.dataHomeSlide.dataHomeSlideState)
